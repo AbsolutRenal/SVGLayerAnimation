@@ -1,0 +1,508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		049416BB36FF546E42BEA628479C154C /* PocketSVG.h in Headers */ = {isa = PBXBuildFile; fileRef = 96F44362ED84CCFB657B441C75ACA00F /* PocketSVG.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		053AFCA717944C5D3AF6E7618F94C9ED /* SVGImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91ECA55600661D5D4E316B6C1550E85A /* SVGImageView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		11B1952C1FCC512717C6FECCC58FE8DD /* SVGBezierPath.mm in Sources */ = {isa = PBXBuildFile; fileRef = AEFEEA598446C13FE293401967DED175 /* SVGBezierPath.mm */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		2C8BA0F87E68E3C82C898DCD08920D2E /* SVGEngine.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8B81EFFDEA27A57A03F50D394877DFD5 /* SVGEngine.mm */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		36EE7DE66E84BA71E8E8BA13C921F50F /* SVGPortability.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EC4F3D23F0196C2C906C8B9744720BB /* SVGPortability.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4BDB4D57C11AEF37AFF83AE2C459721D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC5D9C5B838BE747D0154460D02F926 /* Foundation.framework */; };
+		5EC82AA8BA3D30EA4BAEBCEFDA244961 /* PocketSVG-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 66986CB8E84E272EC089CC8565708373 /* PocketSVG-dummy.m */; };
+		8C7A5FD9F03ED16FAD14E1C024E9489C /* Pods-PocketSVG_Animation-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC8BB3BB7EC6AAC47349DD128ABF2FB /* Pods-PocketSVG_Animation-dummy.m */; };
+		8C7E86197CAF77A88AF9A55F9571E0C9 /* SVGImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 59E37501CF1B885C6FB8115972292A77 /* SVGImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		967BB5B7EA4CCBD7C847DF2E7A902DF6 /* SVGBezierPath.h in Headers */ = {isa = PBXBuildFile; fileRef = D6370B122521DA671820DB1F71233D0A /* SVGBezierPath.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C2EC168BBAB0DD070A191E5A8C3CBA4D /* SVGLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 656CC2040A7A229A3EADD070859BE133 /* SVGLayer.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C565CDF5838AB6605D357127D46FB587 /* SVGLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = B5704F361DBBB1BCF8BCDE4198A90219 /* SVGLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDA989F7AC6670C1AA881CD6DE3DBBAC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC5D9C5B838BE747D0154460D02F926 /* Foundation.framework */; };
+		EFAD268740876256FD5A4083324AA307 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BACC64101FAE4862F8806DB02FC71B0E /* QuartzCore.framework */; };
+		F9541ADADA9A099BA37FB37699B2AD80 /* SVGEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = A71D929C055DE15C541F2546076584DE /* SVGEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5D4CF4C7B75D79A02366F4A36F75B085 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 516C44CEAEEDBFD17014C7BB80AD8CE8;
+			remoteInfo = PocketSVG;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09DD6EA9234CA90294325EC5C68F0081 /* Pods-PocketSVG_Animation-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PocketSVG_Animation-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1D5B2020CB547DC246355DE7FD84EFE0 /* Pods-PocketSVG_Animation-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PocketSVG_Animation-resources.sh"; sourceTree = "<group>"; };
+		1EC4F3D23F0196C2C906C8B9744720BB /* SVGPortability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SVGPortability.h; sourceTree = "<group>"; };
+		2B02917EE483F2D2F35219D1C9230587 /* PocketSVG.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PocketSVG.xcconfig; sourceTree = "<group>"; };
+		3AC5D9C5B838BE747D0154460D02F926 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4D3C0C2E156C4F3936DA6223377EEF98 /* Pods-PocketSVG_Animation-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PocketSVG_Animation-acknowledgements.plist"; sourceTree = "<group>"; };
+		517DA49679BB758379FFFA414AE20D77 /* PocketSVG-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PocketSVG-prefix.pch"; sourceTree = "<group>"; };
+		59E37501CF1B885C6FB8115972292A77 /* SVGImageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SVGImageView.h; sourceTree = "<group>"; };
+		62E00B1D15DE07A7A5BE454448C95616 /* Pods-PocketSVG_Animation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PocketSVG_Animation.debug.xcconfig"; sourceTree = "<group>"; };
+		656CC2040A7A229A3EADD070859BE133 /* SVGLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SVGLayer.m; sourceTree = "<group>"; };
+		660FEDA5E8FD2AC442F57B37B33ED6F0 /* libPocketSVG.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libPocketSVG.a; path = libPocketSVG.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		66986CB8E84E272EC089CC8565708373 /* PocketSVG-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PocketSVG-dummy.m"; sourceTree = "<group>"; };
+		7066148490EEE21F90C21133A08AAD4E /* Pods-PocketSVG_Animation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PocketSVG_Animation.release.xcconfig"; sourceTree = "<group>"; };
+		8B81EFFDEA27A57A03F50D394877DFD5 /* SVGEngine.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = SVGEngine.mm; sourceTree = "<group>"; };
+		91ECA55600661D5D4E316B6C1550E85A /* SVGImageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SVGImageView.m; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		96F44362ED84CCFB657B441C75ACA00F /* PocketSVG.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PocketSVG.h; sourceTree = "<group>"; };
+		A71D929C055DE15C541F2546076584DE /* SVGEngine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SVGEngine.h; sourceTree = "<group>"; };
+		AE09811F3D0CDA9BD21CEC7219441209 /* Pods-PocketSVG_Animation-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PocketSVG_Animation-frameworks.sh"; sourceTree = "<group>"; };
+		AEFEEA598446C13FE293401967DED175 /* SVGBezierPath.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = SVGBezierPath.mm; sourceTree = "<group>"; };
+		B5704F361DBBB1BCF8BCDE4198A90219 /* SVGLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SVGLayer.h; sourceTree = "<group>"; };
+		BACC64101FAE4862F8806DB02FC71B0E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		CDC8BB3BB7EC6AAC47349DD128ABF2FB /* Pods-PocketSVG_Animation-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PocketSVG_Animation-dummy.m"; sourceTree = "<group>"; };
+		D6370B122521DA671820DB1F71233D0A /* SVGBezierPath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SVGBezierPath.h; sourceTree = "<group>"; };
+		F2D0C223C483E57825B1DA884A4272F6 /* libPods-PocketSVG_Animation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-PocketSVG_Animation.a"; path = "libPods-PocketSVG_Animation.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5B057684FDCF11A2B060BE122537AC75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDA989F7AC6670C1AA881CD6DE3DBBAC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE81C176B3FF8CBC02639461E5F755B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BDB4D57C11AEF37AFF83AE2C459721D /* Foundation.framework in Frameworks */,
+				EFAD268740876256FD5A4083324AA307 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		082FE8F611580C2FC3DFEF058348579F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2B02917EE483F2D2F35219D1C9230587 /* PocketSVG.xcconfig */,
+				66986CB8E84E272EC089CC8565708373 /* PocketSVG-dummy.m */,
+				517DA49679BB758379FFFA414AE20D77 /* PocketSVG-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PocketSVG";
+			sourceTree = "<group>";
+		};
+		20195C4B5B36CF69EA26F61A40216913 /* Pods-PocketSVG_Animation */ = {
+			isa = PBXGroup;
+			children = (
+				09DD6EA9234CA90294325EC5C68F0081 /* Pods-PocketSVG_Animation-acknowledgements.markdown */,
+				4D3C0C2E156C4F3936DA6223377EEF98 /* Pods-PocketSVG_Animation-acknowledgements.plist */,
+				CDC8BB3BB7EC6AAC47349DD128ABF2FB /* Pods-PocketSVG_Animation-dummy.m */,
+				AE09811F3D0CDA9BD21CEC7219441209 /* Pods-PocketSVG_Animation-frameworks.sh */,
+				1D5B2020CB547DC246355DE7FD84EFE0 /* Pods-PocketSVG_Animation-resources.sh */,
+				62E00B1D15DE07A7A5BE454448C95616 /* Pods-PocketSVG_Animation.debug.xcconfig */,
+				7066148490EEE21F90C21133A08AAD4E /* Pods-PocketSVG_Animation.release.xcconfig */,
+			);
+			name = "Pods-PocketSVG_Animation";
+			path = "Target Support Files/Pods-PocketSVG_Animation";
+			sourceTree = "<group>";
+		};
+		29A2564912C51A239D8600ED5D47E1CB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5F4A734C928116655077A4ED2CBD08FC /* PocketSVG */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7AB6F27FF3606F9360547F8F1977A63 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5F4A734C928116655077A4ED2CBD08FC /* PocketSVG */ = {
+			isa = PBXGroup;
+			children = (
+				96F44362ED84CCFB657B441C75ACA00F /* PocketSVG.h */,
+				D6370B122521DA671820DB1F71233D0A /* SVGBezierPath.h */,
+				AEFEEA598446C13FE293401967DED175 /* SVGBezierPath.mm */,
+				A71D929C055DE15C541F2546076584DE /* SVGEngine.h */,
+				8B81EFFDEA27A57A03F50D394877DFD5 /* SVGEngine.mm */,
+				59E37501CF1B885C6FB8115972292A77 /* SVGImageView.h */,
+				91ECA55600661D5D4E316B6C1550E85A /* SVGImageView.m */,
+				B5704F361DBBB1BCF8BCDE4198A90219 /* SVGLayer.h */,
+				656CC2040A7A229A3EADD070859BE133 /* SVGLayer.m */,
+				1EC4F3D23F0196C2C906C8B9744720BB /* SVGPortability.h */,
+				082FE8F611580C2FC3DFEF058348579F /* Support Files */,
+			);
+			name = PocketSVG;
+			path = PocketSVG;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				29A2564912C51A239D8600ED5D47E1CB /* Pods */,
+				9F8255EF867251917C4C8B461F243EB5 /* Products */,
+				99A2BB726451F3778BACC31E6A788BB2 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		99A2BB726451F3778BACC31E6A788BB2 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				20195C4B5B36CF69EA26F61A40216913 /* Pods-PocketSVG_Animation */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		9F8255EF867251917C4C8B461F243EB5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				660FEDA5E8FD2AC442F57B37B33ED6F0 /* libPocketSVG.a */,
+				F2D0C223C483E57825B1DA884A4272F6 /* libPods-PocketSVG_Animation.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C7AB6F27FF3606F9360547F8F1977A63 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3AC5D9C5B838BE747D0154460D02F926 /* Foundation.framework */,
+				BACC64101FAE4862F8806DB02FC71B0E /* QuartzCore.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		569DE19283914D5A22FB5CE9E8E12FCE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				049416BB36FF546E42BEA628479C154C /* PocketSVG.h in Headers */,
+				967BB5B7EA4CCBD7C847DF2E7A902DF6 /* SVGBezierPath.h in Headers */,
+				F9541ADADA9A099BA37FB37699B2AD80 /* SVGEngine.h in Headers */,
+				8C7E86197CAF77A88AF9A55F9571E0C9 /* SVGImageView.h in Headers */,
+				C565CDF5838AB6605D357127D46FB587 /* SVGLayer.h in Headers */,
+				36EE7DE66E84BA71E8E8BA13C921F50F /* SVGPortability.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		516C44CEAEEDBFD17014C7BB80AD8CE8 /* PocketSVG */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B5FE191B95DE182D1E8A014E87ACB6A /* Build configuration list for PBXNativeTarget "PocketSVG" */;
+			buildPhases = (
+				87D1851020F6A88D1063C44CF6D4BB78 /* Sources */,
+				FE81C176B3FF8CBC02639461E5F755B1 /* Frameworks */,
+				569DE19283914D5A22FB5CE9E8E12FCE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PocketSVG;
+			productName = PocketSVG;
+			productReference = 660FEDA5E8FD2AC442F57B37B33ED6F0 /* libPocketSVG.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B648C6A15871C0ECF5429419A9D762B7 /* Pods-PocketSVG_Animation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 716B60BFBFA34DBC0753018F5BB3EA96 /* Build configuration list for PBXNativeTarget "Pods-PocketSVG_Animation" */;
+			buildPhases = (
+				1C49F338BABF7B9AAF9F8626619DB3F2 /* Sources */,
+				5B057684FDCF11A2B060BE122537AC75 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D0D4081ABDA67F19B44071E5005619D /* PBXTargetDependency */,
+			);
+			name = "Pods-PocketSVG_Animation";
+			productName = "Pods-PocketSVG_Animation";
+			productReference = F2D0C223C483E57825B1DA884A4272F6 /* libPods-PocketSVG_Animation.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 9F8255EF867251917C4C8B461F243EB5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				516C44CEAEEDBFD17014C7BB80AD8CE8 /* PocketSVG */,
+				B648C6A15871C0ECF5429419A9D762B7 /* Pods-PocketSVG_Animation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1C49F338BABF7B9AAF9F8626619DB3F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C7A5FD9F03ED16FAD14E1C024E9489C /* Pods-PocketSVG_Animation-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87D1851020F6A88D1063C44CF6D4BB78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EC82AA8BA3D30EA4BAEBCEFDA244961 /* PocketSVG-dummy.m in Sources */,
+				11B1952C1FCC512717C6FECCC58FE8DD /* SVGBezierPath.mm in Sources */,
+				2C8BA0F87E68E3C82C898DCD08920D2E /* SVGEngine.mm in Sources */,
+				053AFCA717944C5D3AF6E7618F94C9ED /* SVGImageView.m in Sources */,
+				C2EC168BBAB0DD070A191E5A8C3CBA4D /* SVGLayer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2D0D4081ABDA67F19B44071E5005619D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PocketSVG;
+			target = 516C44CEAEEDBFD17014C7BB80AD8CE8 /* PocketSVG */;
+			targetProxy = 5D4CF4C7B75D79A02366F4A36F75B085 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		12914D756594D15C6F2CA12FE5F89F1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		36A0F99CD82FCD66DC17885EBB5F207F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62E00B1D15DE07A7A5BE454448C95616 /* Pods-PocketSVG_Animation.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		5754891A329395681D4937B144A8421A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7066148490EEE21F90C21133A08AAD4E /* Pods-PocketSVG_Animation.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		7BE0B583392228D0E27F82909BC97BEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B02917EE483F2D2F35219D1C9230587 /* PocketSVG.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PocketSVG/PocketSVG-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		7DCB074B744CB4D60A1FAA90C8725E5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B02917EE483F2D2F35219D1C9230587 /* PocketSVG.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PocketSVG/PocketSVG-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E72E7977875C2D251FC62736BBDDC389 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12914D756594D15C6F2CA12FE5F89F1B /* Debug */,
+				E72E7977875C2D251FC62736BBDDC389 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B5FE191B95DE182D1E8A014E87ACB6A /* Build configuration list for PBXNativeTarget "PocketSVG" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DCB074B744CB4D60A1FAA90C8725E5F /* Debug */,
+				7BE0B583392228D0E27F82909BC97BEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		716B60BFBFA34DBC0753018F5BB3EA96 /* Build configuration list for PBXNativeTarget "Pods-PocketSVG_Animation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36A0F99CD82FCD66DC17885EBB5F207F /* Debug */,
+				5754891A329395681D4937B144A8421A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

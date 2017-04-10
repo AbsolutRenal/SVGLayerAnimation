@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26F424063B6D5899A7C4E759 /* libPods-PocketSVG_Animation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 44730C5DAFC4AA803411AA0D /* libPods-PocketSVG_Animation.a */; };
 		E282DECF1E9B784B009BE85C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E282DECE1E9B784B009BE85C /* AppDelegate.swift */; };
 		E282DED11E9B784B009BE85C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E282DED01E9B784B009BE85C /* ViewController.swift */; };
 		E282DED41E9B784B009BE85C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E282DED21E9B784B009BE85C /* Main.storyboard */; };
@@ -26,6 +27,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06A0BAFE56B40F3B9CC732D4 /* Pods-PocketSVG_Animation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketSVG_Animation.release.xcconfig"; path = "Pods/Target Support Files/Pods-PocketSVG_Animation/Pods-PocketSVG_Animation.release.xcconfig"; sourceTree = "<group>"; };
+		3739122CA2B1E415FF4A3216 /* Pods-PocketSVG_Animation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketSVG_Animation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PocketSVG_Animation/Pods-PocketSVG_Animation.debug.xcconfig"; sourceTree = "<group>"; };
+		44730C5DAFC4AA803411AA0D /* libPods-PocketSVG_Animation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PocketSVG_Animation.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E282DECB1E9B784A009BE85C /* PocketSVG_Animation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketSVG_Animation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E282DECE1E9B784B009BE85C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E282DED01E9B784B009BE85C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26F424063B6D5899A7C4E759 /* libPods-PocketSVG_Animation.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +61,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38A40CC487D2FA6B33836716 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3739122CA2B1E415FF4A3216 /* Pods-PocketSVG_Animation.debug.xcconfig */,
+				06A0BAFE56B40F3B9CC732D4 /* Pods-PocketSVG_Animation.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		44F52E315BF0C9E928CAD238 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44730C5DAFC4AA803411AA0D /* libPods-PocketSVG_Animation.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E282DEC21E9B784A009BE85C = {
 			isa = PBXGroup;
 			children = (
 				E282DECD1E9B784A009BE85C /* PocketSVG_Animation */,
 				E282DEE21E9B784B009BE85C /* PocketSVG_AnimationTests */,
 				E282DECC1E9B784A009BE85C /* Products */,
+				38A40CC487D2FA6B33836716 /* Pods */,
+				44F52E315BF0C9E928CAD238 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,9 +127,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E282DEE81E9B784B009BE85C /* Build configuration list for PBXNativeTarget "PocketSVG_Animation" */;
 			buildPhases = (
+				0AB2D4D937B81AC1FACFE06D /* [CP] Check Pods Manifest.lock */,
 				E282DEC71E9B784A009BE85C /* Sources */,
 				E282DEC81E9B784A009BE85C /* Frameworks */,
 				E282DEC91E9B784A009BE85C /* Resources */,
+				62791E0041A24A6764DA1E30 /* [CP] Embed Pods Frameworks */,
+				7714FBE5C89E7BDA491B6037 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -195,6 +222,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0AB2D4D937B81AC1FACFE06D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		62791E0041A24A6764DA1E30 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PocketSVG_Animation/Pods-PocketSVG_Animation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7714FBE5C89E7BDA491B6037 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PocketSVG_Animation/Pods-PocketSVG_Animation-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E282DEC71E9B784A009BE85C /* Sources */ = {
@@ -341,6 +416,7 @@
 		};
 		E282DEE91E9B784B009BE85C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3739122CA2B1E415FF4A3216 /* Pods-PocketSVG_Animation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = R2EXFBAHGS;
@@ -354,6 +430,7 @@
 		};
 		E282DEEA1E9B784B009BE85C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06A0BAFE56B40F3B9CC732D4 /* Pods-PocketSVG_Animation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = R2EXFBAHGS;
