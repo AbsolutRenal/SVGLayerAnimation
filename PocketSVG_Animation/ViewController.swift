@@ -23,7 +23,7 @@ extension UIColor {
                                alpha: 1.0)
 }
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, Animatable {
   @IBOutlet weak var pocketSVGView: UIView!
   @IBOutlet weak var macawView: Macaw.SVGView!
   @IBOutlet weak var swiftSVGView: UIView!
@@ -92,12 +92,33 @@ class ViewController: UIViewController {
     guard let imageKit = image else {
       return
     }
-    let svgView = SVGKFastImageView(svgkImage: imageKit)
+    let svgView = SVGKLayeredImageView(svgkImage: imageKit)
     guard let svgViewKit = svgView else {
       return
     }
     svgViewKit.frame = svgKitView.bounds
     svgKitView.addSubview(svgViewKit)
+    
+    deepPrintTree(layer: svgViewKit.image.caLayerTree)
+  }
+  
+  private func deepPrintTree(layer: CALayer, indentStyle: String = "") {
+    print("\(indentStyle) \(layer)")
+    let style = indentStyle + "--"
+    if let sublayers = layer.sublayers {
+      sublayers.forEach { [weak self] in
+        self?.deepPrintTree(layer: $0, indentStyle: style)
+      }
+    } else {
+      let anim = buildKeyFrameAnimation(keyPath: "strokeEnd",
+                                        values: [0.0, 1.0],
+                                        keyTimes: [0.0, 1.0],
+                                        duration: 2.0,
+                                        delegate: nil,
+                                        timingFunctions: nil)
+      layer.add(anim,
+                forKey: "appear")
+    }
   }
 
   override func didReceiveMemoryWarning() {

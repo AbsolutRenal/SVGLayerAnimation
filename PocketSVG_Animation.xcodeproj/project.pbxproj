@@ -15,6 +15,7 @@
 		E282DED91E9B784B009BE85C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E282DED71E9B784B009BE85C /* LaunchScreen.storyboard */; };
 		E282DEE41E9B784B009BE85C /* PocketSVG_AnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E282DEE31E9B784B009BE85C /* PocketSVG_AnimationTests.swift */; };
 		E2A4683F1E9CDFD800FE3AD3 /* homer-simpson.svg in Resources */ = {isa = PBXBuildFile; fileRef = E2A4683E1E9CDFD800FE3AD3 /* homer-simpson.svg */; };
+		E2A468411E9D07ED00FE3AD3 /* Animatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A468401E9D07ED00FE3AD3 /* Animatable.swift */; };
 		E2A726FF1E9B7D0800DE28EF /* USI-10ans.svg in Resources */ = {isa = PBXBuildFile; fileRef = E2A726FE1E9B7D0800DE28EF /* USI-10ans.svg */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		E282DEE31E9B784B009BE85C /* PocketSVG_AnimationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketSVG_AnimationTests.swift; sourceTree = "<group>"; };
 		E282DEE51E9B784B009BE85C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2A4683E1E9CDFD800FE3AD3 /* homer-simpson.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "homer-simpson.svg"; sourceTree = "<group>"; };
+		E2A468401E9D07ED00FE3AD3 /* Animatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animatable.swift; sourceTree = "<group>"; };
 		E2A726FE1E9B7D0800DE28EF /* USI-10ans.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "USI-10ans.svg"; sourceTree = "<group>"; };
 		E2A727001E9B7EEF00DE28EF /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,6 +108,7 @@
 		E282DECD1E9B784A009BE85C /* PocketSVG_Animation */ = {
 			isa = PBXGroup;
 			children = (
+				E2A468401E9D07ED00FE3AD3 /* Animatable.swift */,
 				E2A726FD1E9B7CD400DE28EF /* Ressources */,
 				E282DECE1E9B784B009BE85C /* AppDelegate.swift */,
 				E282DED01E9B784B009BE85C /* ViewController.swift */,
@@ -295,6 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E282DED11E9B784B009BE85C /* ViewController.swift in Sources */,
+				E2A468411E9D07ED00FE3AD3 /* Animatable.swift in Sources */,
 				E282DECF1E9B784B009BE85C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -30,7 +30,7 @@
                                 <rect key="frame" x="0.0" y="167" width="375" height="166.5"/>
                                 <color key="backgroundColor" red="0.23950053020000001" green="0.29605669709999999" blue="0.35995003170000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="fileName" value="homer-simpson"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fileName" value="USI-10ans"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qy9-VA-nbh">
