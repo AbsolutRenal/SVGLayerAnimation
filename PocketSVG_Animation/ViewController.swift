@@ -23,8 +23,7 @@ extension UIColor {
 class ViewController: UIViewController, Animatable {
   @IBOutlet weak var svgKitView: UIView!
   
-  private let svgFileName = "USI-10ans"
-//  private let svgFileName = "sphere_wireframe"
+  private let svgFileName = "10ans"
   private let animDelay: Float = 0.15
   private let animDuration: CFTimeInterval = 4.0
   private let randomDelaySeed: UInt32 = 30
@@ -53,7 +52,9 @@ class ViewController: UIViewController, Animatable {
     guard let svgViewKit = svgView else {
       return
     }
-    svgViewKit.frame = svgKitView.bounds
+//    svgViewKit.translatesAutoresizingMaskIntoConstraints = false
+//    svgViewKit.autoresizingMask = [.flexibleHeight, .flexibleWidth]
+//    svgViewKit.frame = svgKitView.bounds
     svgKitView.addSubview(svgViewKit)
     
     animateLayerTree(layer: svgViewKit.image.caLayerTree)
@@ -70,14 +71,18 @@ class ViewController: UIViewController, Animatable {
         self.animateLayerTree(layer: $0, delay: delay + self.animDelay)
       }
     } else {
-      let anim = buildKeyFrameAnimation(keyPath: "strokeEnd",
-                                        values: [0.0, 1.0],
-                                        keyTimes: [NSNumber(value: delay + randomDelay()), 1.0],
-                                        duration: animDuration,
-                                        delegate: nil,
-                                        timingFunctions: [easing])
-      layer.add(anim,
-                forKey: "appear")
+      if let shape = layer as? CAShapeLayer {
+        shape.fillColor = UIColor.clear.cgColor
+        shape.strokeColor = UIColor.usiGray.cgColor
+        let anim = buildKeyFrameAnimation(keyPath: "strokeEnd",
+                                          values: [0.0, 1.0],
+                                          keyTimes: [NSNumber(value: delay + randomDelay()), 1.0],
+                                          duration: animDuration,
+                                          delegate: nil,
+                                          timingFunctions: nil)
+        shape.add(anim,
+                  forKey: "appear")
+      }
     }
   }
 
