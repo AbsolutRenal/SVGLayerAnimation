@@ -6,9 +6,9 @@ inhibit_all_warnings!
 use_frameworks!
 
 target 'PocketSVG_Animation' do
-  pod 'PocketSVG'
-  pod 'Macaw', '0.8.1'
-  pod 'SwiftSVG'
+  #pod 'PocketSVG'
+  #pod 'Macaw', '0.8.1'
+  #pod 'SwiftSVG'
   pod 'SVGKit', :git => 'https://github.com/SVGKit/SVGKit.git', :branch => '2.x'
 end
 

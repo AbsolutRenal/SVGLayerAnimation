@@ -24,6 +24,7 @@ class ViewController: UIViewController, Animatable {
   @IBOutlet weak var svgKitView: UIView!
   
   private let svgFileName = "USI-10ans"
+//  private let svgFileName = "sphere_wireframe"
   private let animDelay: Float = 0.15
   private let animDuration: CFTimeInterval = 4.0
   private let randomDelaySeed: UInt32 = 30

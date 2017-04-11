@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9157794854CBDE10ED50B82C7E3BDC93"
+               BlueprintIdentifier = "6B8E98EFB82E6B7F82A3214ABE93426C"
                BuildableName = "Pods_PocketSVG_Animation.framework"
                BlueprintName = "Pods-PocketSVG_Animation"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9157794854CBDE10ED50B82C7E3BDC93"
+            BlueprintIdentifier = "6B8E98EFB82E6B7F82A3214ABE93426C"
             BuildableName = "Pods_PocketSVG_Animation.framework"
             BlueprintName = "Pods-PocketSVG_Animation"
             ReferencedContainer = "container:Pods.xcodeproj">

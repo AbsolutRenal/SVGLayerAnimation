@@ -9,16 +9,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Macaw.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>PocketSVG.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-PocketSVG_Animation.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -29,50 +19,20 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>SWXMLHash.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>SwiftSVG.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0FFE669DCA4D2CE297C098F710E30911</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>3C2728F57D12A8BA079C05AB96DD1F50</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>416B388906DEFAC81F0676F277AC9058</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9157794854CBDE10ED50B82C7E3BDC93</key>
+		<key>6B8E98EFB82E6B7F82A3214ABE93426C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C6CC4110FD73A160FAC356A8E8D2870C</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>CF3A32E5430952DD724352123454B893</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>D98986199D4F04C546E0E25C7DC731EF</key>
+		<key>D575D4003F3D5EFB60A05D2471D3C732</key>
 		<dict>
 			<key>primary</key>
 			<true/>
