@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>CocoaLumberjack.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Macaw.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -19,7 +24,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SVGKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SWXMLHash.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SwiftSVG.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -27,12 +42,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>06B9E556B75A271A556C6672B96A3F6D</key>
+		<key>0FFE669DCA4D2CE297C098F710E30911</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>0FFE669DCA4D2CE297C098F710E30911</key>
+		<key>3C2728F57D12A8BA079C05AB96DD1F50</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>416B388906DEFAC81F0676F277AC9058</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9157794854CBDE10ED50B82C7E3BDC93</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C6CC4110FD73A160FAC356A8E8D2870C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
