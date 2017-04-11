@@ -24,11 +24,12 @@ class ViewController: UIViewController, Animatable {
   @IBOutlet weak var svgKitView: UIView!
   
   private let svgFileName = "USI-10ans"
+  private let animDelay: CFTimeInterval = 0.15
+  private let animDuration: CFTimeInterval = 4.0
   private let easing = CAMediaTimingFunction(controlPoints: 0.5,
                                              1.0,
                                              0.8,
                                              1.0)
-//  private let svgFileName = "homer-simpson"
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -52,21 +53,19 @@ class ViewController: UIViewController, Animatable {
     svgViewKit.frame = svgKitView.bounds
     svgKitView.addSubview(svgViewKit)
     
-    deepPrintTree(layer: svgViewKit.image.caLayerTree)
+    animateLayerTree(layer: svgViewKit.image.caLayerTree)
   }
   
-  private func deepPrintTree(layer: CALayer, indentStyle: String = "") {
-    print("\(indentStyle) \(layer)")
-    let style = indentStyle + "--"
+  private func animateLayerTree(layer: CALayer, delay: CFTimeInterval = 0.0) {
     if let sublayers = layer.sublayers {
-      sublayers.forEach { [weak self] in
-        self?.deepPrintTree(layer: $0, indentStyle: style)
+      sublayers.forEach { [unowned self] in
+        self.animateLayerTree(layer: $0, delay: delay + self.animDelay)
       }
     } else {
       let anim = buildKeyFrameAnimation(keyPath: "strokeEnd",
                                         values: [0.0, 1.0],
                                         keyTimes: [0.0, 1.0],
-                                        duration: 2.0,
+                                        duration: animDuration,
                                         delegate: nil,
                                         timingFunctions: [easing])
       layer.add(anim,
