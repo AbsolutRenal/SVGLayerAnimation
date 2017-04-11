@@ -7,9 +7,6 @@
 //
 
 import UIKit
-import PocketSVG
-import Macaw
-import SwiftSVG
 import SVGKit
 
 extension UIColor {
@@ -24,12 +21,13 @@ extension UIColor {
 }
 
 class ViewController: UIViewController, Animatable {
-  @IBOutlet weak var pocketSVGView: UIView!
-  @IBOutlet weak var macawView: Macaw.SVGView!
-  @IBOutlet weak var swiftSVGView: UIView!
   @IBOutlet weak var svgKitView: UIView!
   
   private let svgFileName = "USI-10ans"
+  private let easing = CAMediaTimingFunction(controlPoints: 0.5,
+                                             1.0,
+                                             0.8,
+                                             1.0)
 //  private let svgFileName = "homer-simpson"
 
   override func viewDidLoad() {
@@ -39,52 +37,7 @@ class ViewController: UIViewController, Animatable {
   
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
-    
-    drawPocketSVG()
-    drawSwiftSVG()
     drawSVGKit()
-  }
-  
-  private func drawPocketSVG() {
-    let url = Bundle.main.url(forResource: svgFileName, withExtension: "svg")!
-    drawFullSVG(atURL: url)
-//    drawSVGPath(atURL: url)
-  }
-  
-  private func drawFullSVG(atURL url: URL) {
-    let svgImageView = SVGImageView(contentsOf: url)
-    svgImageView.frame = CGRect(x: 0, y: 0, width: 400, height: 200)
-    pocketSVGView.addSubview(svgImageView)
-    pocketSVGView.layer.backgroundColor = UIColor.usiGray.cgColor
-  }
-  
-  private func drawSVGPath(atURL url: URL) {
-    let paths = SVGBezierPath.pathsFromSVG(at: url)
-    for path in paths {
-      // Create a layer for each path
-      let svgLayer = CAShapeLayer()
-      svgLayer.path = path.cgPath
-      
-      // Set its display properties
-      svgLayer.lineWidth   = 1
-      svgLayer.lineJoin = kCALineJoinBevel
-      
-      svgLayer.strokeColor = UIColor.usiBlue.cgColor
-      svgLayer.fillColor = UIColor.clear.cgColor
-      
-      // Add it to the layer hierarchy
-      pocketSVGView.layer.addSublayer(svgLayer)
-    }
-    pocketSVGView.layer.masksToBounds = false
-    pocketSVGView.layer.backgroundColor = UIColor.usiGray.cgColor
-  }
-  
-  private func drawSwiftSVG() {
-    let shapeLayer = CAShapeLayer()
-    let svgURL = Bundle.main.url(forResource: svgFileName, withExtension: "svg")
-    let pathFromSVGFile = UIBezierPath.pathWithSVGURL(svgURL!)
-    shapeLayer.path = pathFromSVGFile?.cgPath
-    swiftSVGView.layer.addSublayer(shapeLayer)
   }
   
   private func drawSVGKit() {
@@ -115,7 +68,7 @@ class ViewController: UIViewController, Animatable {
                                         keyTimes: [0.0, 1.0],
                                         duration: 2.0,
                                         delegate: nil,
-                                        timingFunctions: nil)
+                                        timingFunctions: [easing])
       layer.add(anim,
                 forKey: "appear")
     }
