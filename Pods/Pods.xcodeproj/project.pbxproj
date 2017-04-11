@@ -7,176 +7,622 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		049416BB36FF546E42BEA628479C154C /* PocketSVG.h in Headers */ = {isa = PBXBuildFile; fileRef = 96F44362ED84CCFB657B441C75ACA00F /* PocketSVG.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		053AFCA717944C5D3AF6E7618F94C9ED /* SVGImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91ECA55600661D5D4E316B6C1550E85A /* SVGImageView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		11B1952C1FCC512717C6FECCC58FE8DD /* SVGBezierPath.mm in Sources */ = {isa = PBXBuildFile; fileRef = AEFEEA598446C13FE293401967DED175 /* SVGBezierPath.mm */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		2C8BA0F87E68E3C82C898DCD08920D2E /* SVGEngine.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8B81EFFDEA27A57A03F50D394877DFD5 /* SVGEngine.mm */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		36EE7DE66E84BA71E8E8BA13C921F50F /* SVGPortability.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EC4F3D23F0196C2C906C8B9744720BB /* SVGPortability.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4BDB4D57C11AEF37AFF83AE2C459721D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC5D9C5B838BE747D0154460D02F926 /* Foundation.framework */; };
-		5EC82AA8BA3D30EA4BAEBCEFDA244961 /* PocketSVG-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 66986CB8E84E272EC089CC8565708373 /* PocketSVG-dummy.m */; };
-		8C7A5FD9F03ED16FAD14E1C024E9489C /* Pods-PocketSVG_Animation-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC8BB3BB7EC6AAC47349DD128ABF2FB /* Pods-PocketSVG_Animation-dummy.m */; };
-		8C7E86197CAF77A88AF9A55F9571E0C9 /* SVGImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 59E37501CF1B885C6FB8115972292A77 /* SVGImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		967BB5B7EA4CCBD7C847DF2E7A902DF6 /* SVGBezierPath.h in Headers */ = {isa = PBXBuildFile; fileRef = D6370B122521DA671820DB1F71233D0A /* SVGBezierPath.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2EC168BBAB0DD070A191E5A8C3CBA4D /* SVGLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 656CC2040A7A229A3EADD070859BE133 /* SVGLayer.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		C565CDF5838AB6605D357127D46FB587 /* SVGLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = B5704F361DBBB1BCF8BCDE4198A90219 /* SVGLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DDA989F7AC6670C1AA881CD6DE3DBBAC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC5D9C5B838BE747D0154460D02F926 /* Foundation.framework */; };
-		EFAD268740876256FD5A4083324AA307 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BACC64101FAE4862F8806DB02FC71B0E /* QuartzCore.framework */; };
-		F9541ADADA9A099BA37FB37699B2AD80 /* SVGEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = A71D929C055DE15C541F2546076584DE /* SVGEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0192592B67601D34CB56CB80DB2CDE95 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA2D5A0F81DE96E67F6E8FB18FF48AF /* Line.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		01CC04B099F5951166E8D1B5274CFC80 /* AnimationProducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1665D1363FA0C5EAB28D815B49EBEB /* AnimationProducer.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		0202E449892B161D105CABCAA749CC59 /* RadialGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A86D1EBCE121CF03FC9544F8C8A8D86 /* RadialGradient.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		02DC54ED6C2FE54AE52290B794A105D8 /* SWXMLHash-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 952A162462F7E935C28D5F0D41BD6A26 /* SWXMLHash-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		062E1BC78A846E5F39DAD438595DBB62 /* TapEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145B04E6402D5E072DFB01C6F585BCE4 /* TapEvent.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		06C8E9131B5F7E901BEA5CB393658C6C /* RenderContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3EFB07CABB82CA0D63070846AEB485 /* RenderContext.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		0BDE72BF4FDD4AA3C9E38523AB5D92B5 /* SVGConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F2F2FDE4503B2F5C441F2AE37B5E42 /* SVGConstants.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		0BF588CD5F424E8B72DFCECD8D476369 /* LinearGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A487B496A61B102C6898B6AF1CD7E6AF /* LinearGradient.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		0D3F0A7F09294A06AC1F7EF36FAB5D3B /* RoundRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0917CDF25E22544363FDCF9FC037C5 /* RoundRect.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		126288E695E20DEFDD8E269773E6B7E0 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56BA1C1F6327B2B8ACEA066088B2381 /* Text.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		127D32B69AF79CA791E73004C9F82249 /* TransformInterpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C36FF2F2AFFDF23ACD480402126782 /* TransformInterpolation.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		14AA8FF9126C627E80CCF17C72CB9E96 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436E35802FC47742921B135B29236840 /* Group.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		14C48B24924292666EFE758FF1891BE6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E6C56B611037AD77EA86182EC4C8257 /* Foundation.framework */; };
+		15DEEC27A9A77D4E9150418C8BAD9955 /* ShapeRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7D596DBCCBE7312F3B4C8C8EF07E65 /* ShapeRenderer.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		1621D205CDBEB784754B6B09CFFAFF42 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25006581B9E4636147C7FFE594A18902 /* Image.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		179BEAA988CE8E581C714091AC701FD1 /* PathBounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B01B33304622AE02DE91D3D933355B /* PathBounds.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		1A92C217192B77DF8DA30D2C978418DA /* ContentsInterpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D505CEC66F82E3C627A2297FE73CB0B /* ContentsInterpolation.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		1BC0E37AC8D2657ECE8A54C2555AD5A0 /* SceneUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BA4AAFA211DCE8A178A25E532ECCDF /* SceneUtils.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		1BE1B0DE90BA52BBD1A3094C8FECBB67 /* Pods-PocketSVG_Animation-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E015B018AC63A1D54875B78A0DDEF2 /* Pods-PocketSVG_Animation-dummy.m */; };
+		1CF8508C4CFCE97E5ED07928A03F61CD /* ImageRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7352828C7305376B5881AB21D4C0C4 /* ImageRenderer.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		1EBF01E8C0EC42194BE2102B922C694C /* ShapeInterpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA96FECB854189D9B6885656AD097DE2 /* ShapeInterpolation.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		203AE8B2C1ABC0D97CF993AE30CEC2D2 /* GroupDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B1C5C9E2A537D4F66E4D528D496AA /* GroupDisposable.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		22BAD50B76FA6895E9DDA9442833F11B /* AnimOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891244A47925A722D1EAD16137025235 /* AnimOperators.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		24787A6FD8A02D40EC175E88232722EC /* GeomUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326B7A36B79FC3472EC6DAEB459AA75A /* GeomUtils.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		24B0AD2EBC874D421EADF21E263AF3D0 /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18FEE60B3B3F6658C3612FC8A41C197 /* Size.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		27C7F20CBCD2008B6B4FE2E142AEF45B /* Disposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44756F4ACF35B19169FFB7E8ADC94EA4 /* Disposable.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		28634A52342430CE70A527409E7CC8B2 /* SVGParserError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9009160C60CF2E2266A9B90DEC608437 /* SVGParserError.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		2CF85BE7E652BDE5BDC44A03870B110B /* TouchEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A54484377E4B0FED9EC3B5667967611 /* TouchEvent.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		2DAA691452B802B892992A81A0791022 /* Pods-PocketSVG_Animation-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ABF4425C96311519C6F154D5E03DA3E3 /* Pods-PocketSVG_Animation-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3088599385D4272703EE7BEFBB7D92CC /* DropShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB038621B1F097688584BBB02C2D3416 /* DropShadow.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		3154A5EB5F9CFFA5BE4FE6B1CE8B5B37 /* RenderUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B242C52B836A592378ED02F8DF3D905D /* RenderUtils.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		327F3DAE539DA86A984139F8CAA92506 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4273124FD8474F2C47F266EA4044EE8 /* Color.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		33727DA222A7721FCAAF374EA4418282 /* ShapeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A53A7723EB74F8A3AE8B98AE2497E35 /* ShapeAnimation.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		342268F99D3D8124C437AB6D9E01DD40 /* MacawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA5C161C67298391A828A8892ABCCB1 /* MacawView.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		3D9CEC1305481CAF7EE157088694F7D5 /* NodeRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAD8897716B6985FCDC667B525D9A33 /* NodeRenderer.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		3F2A7AA3396E558540B1A1BE1F278338 /* SVGBezierPath.h in Headers */ = {isa = PBXBuildFile; fileRef = DACAC56980DB58AAEF4BB92914BD2F21 /* SVGBezierPath.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		400EE8FF74CBCAF27939005629B385E8 /* CGExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCF78EF604D27DAA7C77F41DED6F89F /* CGExtensions.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		40F9CDE9FF228382407811ED77BD043E /* TransformAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B7EFD23EC4A1C1C325EC7BE26487A8 /* TransformAnimation.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		41B1C441293C87395E6EE3F6B710C87D /* TimingFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C8BB5B71427ACBA2B54855807C42C /* TimingFunction.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		41D380986133CC588DAEE652C383F846 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E82D8C7C334B7CC0A36A6C22654320 /* Point.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		435BB2EF68CCA751CC5FA4DE95EE443A /* AnimationCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE62867ABA39D09794420009D24E1997 /* AnimationCache.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		439FEFA2167D1DFF088E946F7080FFE2 /* MorphingAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09054B016D11A94AF5CCCFBFAFBD116E /* MorphingAnimation.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		45DEBB00F1744F89B5236C5AD63D3030 /* CAAnimationClosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = E143A4D54F3DFE187E77B3487F237BC6 /* CAAnimationClosure.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		45F9FC57D7C3EADD352F3EC27856F862 /* SVGBezierPath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 29D8F4CCB801FB40F93ED27B4D99DF7B /* SVGBezierPath.mm */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		481FECCC0E8F200D5EF85640758BF85E /* Arc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5A5E8CE1428527CF909BA1815D789B /* Arc.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		4DD923E0D84A97A3B4AA9697171087B5 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = C156BC77D7BC907519BE1397F194955A /* Path.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		4DF6F15882D3B9A347D86F5E3BB7CFF4 /* Effect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368303C07E3468C33FD222E276944C69 /* Effect.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		520B8226A96B14B9712EF1142A1CD744 /* Rect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DAD6FF1537A6108DD4DB7FF78F17C3 /* Rect.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		557B301753A36477D45CD99927FDE50F /* Interpolable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C28EB4F451229E0D6D69428631261C /* Interpolable.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		5BDED56EFB35368C472D14FAEF1AD932 /* Baseline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96205D24D413C2CDE6CC0793926973C7 /* Baseline.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		5C7F4CE9D8DB5CD2676F74DBB4EEB98E /* TextRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948A4ADB4326C2A2CA3F68616DF3F4B3 /* TextRenderer.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		5F8EFF6E71B335F0F3A4A197B00ECE4A /* SWXMLHash+TypeConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09B272676A8F20C2C25DBF5951EC4F1 /* SWXMLHash+TypeConversion.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		67FC4506FC6AC74F461916D0E38005AE /* Polyline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9596730A81DC6005CB65A0C0E0DB4DA1 /* Polyline.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		68B43B55E26B48344776FF5C45785A32 /* SWXMLHash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC5A3B239037E00D2E2BDAF8B37A389D /* SWXMLHash.framework */; };
+		6CCCF74CFCE9A993BEF511347C6565B5 /* RotateEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724C8E07358DAA1AAA34AEBDA7F45912 /* RotateEvent.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		6CD48D741773BBA399E51B889B3A5A49 /* NodeHashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C362C9D4DAF7C1FD194169AC0EAD8702 /* NodeHashable.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		70DF4E33806259F713DAB130CC1C690C /* Ellipse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C70EDA5C97327C1291987D8A44B7AA5 /* Ellipse.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		74A2682AEF8F7571E089BEF8BD9CE91C /* Stop.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A031CB2AD95A5DCC9A8941510B27E8 /* Stop.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		75D7E51BE163CFA9D61464CE03D8498B /* PathBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574848E834B51DD7A66BF4513094CD90 /* PathBuilder.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		7868FBE29090DA3EE10CF5B24C574B8B /* AnimationImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADA6A24AC29A936A2D64F03A815367A /* AnimationImpl.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		7B28424C0A71C11FBC4E56825FBB6BBF /* ContentsAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C562D0CFF4F7E1DA3A1932C1954428B /* ContentsAnimation.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		7D242A481335AB9D3FF0D648FD0B6D98 /* PathFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E50C3EDA55AA697F40EBBF80779DAE8 /* PathFunctions.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		828680E20F267D711CBC98B81B63EA28 /* PinchEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F144BC9B26E1FDA48868D68E89BA73 /* PinchEvent.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		82CBDF33C56168C390988558351A02CC /* GroupRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9DEC99BDB4DBCF93A116DEB733393 /* GroupRenderer.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		88067ED4651972168723C10779273986 /* CGFloat+Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = B548C5BF28414484D0C524EAF2C56806 /* CGFloat+Double.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		8840590C69477EA1F721045F899AB058 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D182C3CB2186849344B8E623003EE1 /* Font.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		8C5BFADAA3215A59B9DDB73AD1588B18 /* SVGLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = BD206C9E82685F390B17AA5447A48F76 /* SVGLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EC1D6A5512948AFD68AB95358835F2F /* SWXMLHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B191A995C9765614E86F8B9E6B803B6 /* SWXMLHash.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		8FE033B8CF8D6E47AD55DD6E993F9DC9 /* Drawable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE42AC96E0E5CBE9F68B913B58DCD24E /* Drawable.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		8FED5F5FCAC07DAA86A8FCB4380A262A /* DoubleInterpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E56A0FFA1299C095B19C6269732EB7C /* DoubleInterpolation.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		921AB43F4FE671C7756066570ED98BE6 /* Fill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C313E9B23287F178AEEC3A6C3EEB27A /* Fill.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		93D84F8899C04A560A8605CBA4875A4B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E6C56B611037AD77EA86182EC4C8257 /* Foundation.framework */; };
+		95089EC67F1DC2E66CEBE8EBD8AF8518 /* PathSegmentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C40D24473A25AC5D104E9FB95EA4648 /* PathSegmentType.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		95429D2589D3C41C871A96202FC6A588 /* AspectRatio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05345B68B563B53B93321104DE259F9E /* AspectRatio.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		98D952314188E6C51DC8E7E29B777EF8 /* SVGLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 21AE6370E824D4C029EBE9537B9B41DA /* SVGLayer.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		9B95EB3A35E97D38020A7878CB15AC54 /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CDC3FA78B26EA8F4BBDBAF7447D8CF /* Circle.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		9BABFD6009CA8B093050102DE8F6B272 /* SVGImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = B56372BB9B6F70F7FD24E058F99B50B3 /* SVGImageView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		9C471F734D2A8BE73A5BCA31E509A395 /* TransformGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB492E5C932C9953C8EEAE297FBBC70 /* TransformGenerator.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		9F43A01B6B7E297D167526AD9278452B /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B7D7DFD7F596B78992EEB1C41EC754 /* Event.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		A31E2B428BDF0C945797241E2BDBB60A /* Insets.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0AF2F21B2610EFF541484C9F86F5FC /* Insets.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		A4365DA8D4681298F435375133ECE8BA /* LineCap.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FF50EA84943AF06AFA61367A09CFA3 /* LineCap.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		A47CF80FC2DD213C67BAEA2D0E50375D /* AnimatableVariable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4CB55EA7CC4D109992EFA12391E2BA /* AnimatableVariable.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		A4979201C27BCB069EFBF044162982E9 /* OpacityAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2062CC11F8CC6E2527A923E684DDDB0 /* OpacityAnimation.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		A4D8E6E767EF7A27E3A37BC01FF5D0E1 /* SVGParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567E7262A27A37E0BAA45B86AC4D9AF0 /* SVGParser.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		A72F76644A923EF117D8A1C135FDD2EB /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCFBAFC68BEB98AB2D934D90F1CBD69 /* Animation.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		A7BB40705E1BA0805099B2AEC8272571 /* AnimationSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC5F4793C9BD43B4DC1FC1C6FCB9CC5 /* AnimationSequence.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		AA8E36805588F1F50EE8528C7C976C82 /* CombineAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F86125939AA70A27F2691365D9898B /* CombineAnimation.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		AADE0CD3561749A910F012A309562634 /* ShapeAnimationGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D156B877CFB7135298B33597C68670 /* ShapeAnimationGenerator.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		ABFF8191AE5E9435256402B4A8279A97 /* SVGEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B44D775EE512E452E2AFCCF59910276 /* SVGEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF68911D105DA292DB84CBF35B920694 /* Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AE684100DB4279BDC71D0AC6CD3E6B /* Transform.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B8705BF6268DF2665AA8E46AB87A3123 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2E616E5DCAF3AA59E9B0195E8311C8C /* QuartzCore.framework */; };
+		B9389D55F43DE90F8B07CF341D141FD4 /* FuncBounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1DFC9602DF5A34D343B68BAE83B8C8 /* FuncBounds.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		BCB56A6B982C933AB23C1818F9BD9B11 /* Variable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8875B2AD6D172F3411CC945C071A4EC4 /* Variable.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		BDF559D88E3A29E080CBC260C2E88B77 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B1D21885C56E1FCA898CD0FA0E284 /* Shape.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C0B243B2BDA0592ECD325D3DDEE2AA45 /* SWXMLHash-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5718C6D83BBE4033C4F998C2136A3493 /* SWXMLHash-dummy.m */; };
+		C3F81903801C4296BD981CDCD980ED6B /* NSTimer+Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FD4E1FE839E8B8E8AA75D08D365B27 /* NSTimer+Closure.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C9548B302E91F9B55F7DB5DD141021E6 /* ShapeLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A03DD90FA5ABD7F1FA07A2732CAB2D0 /* ShapeLayer.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C96A5EB69C1D4E0A6374C69F01158294 /* PocketSVG-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 284C086C5548DC95788568331ADCD8C9 /* PocketSVG-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD166EC4605082D35EFDC9F4D24397E4 /* PocketSVG.h in Headers */ = {isa = PBXBuildFile; fileRef = 9587D157FF14538A2C4E9E92905D76FA /* PocketSVG.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CDFFDEE3E8A585C6324197B809A0648D /* Locus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BAD190D85DAD8808984CAD62E21AE6 /* Locus.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		D104A9A5C80DF073EC9A546AFD2F7FCA /* SVGParserRegexHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D5A9C213909A8E0250FB5EF94143D8 /* SVGParserRegexHelper.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		D1242A0D976413651A58144C4CCE4068 /* PanEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB6622E734C514D229BD9CBFF08649D /* PanEvent.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		D220BB6431573F40C0CD62ADBCA84F97 /* TransformHashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B917E0C9C85007844AC18A405D9F690 /* TransformHashable.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		D37AF40E41FAB29343746CEE28ED754F /* Stroke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBDF4C2374BDCB685605FEED492220C /* Stroke.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		D44E889697BCB06EA1056807810E89A9 /* NodesMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129A5E9855C4AF0FE8CE77FA43EF0434 /* NodesMap.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		D83884CAE68F5CE317D3CAFD3F815313 /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = D1DF99493E7A8C35F3FEB12C1C1448F5 /* Info.plist */; };
+		DBE39FC5414772AF455120CFE5D89B87 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E6C56B611037AD77EA86182EC4C8257 /* Foundation.framework */; };
+		DE28542AC74324EAA7C6817D1C261404 /* Macaw-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 498FFDDFD1F911593CC771107F8264C1 /* Macaw-dummy.m */; };
+		E199FB5E3552F03A0CEC450059557887 /* GaussianBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA75C23538C0CE37874B0F50B9130497 /* GaussianBlur.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		E1CD7286CE0BBF393501F917DB50EC7C /* SVGView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BA530B2C4BDB534807E28DD07029BD /* SVGView.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		E3DFC765B53E33C9745BFF8A9314465A /* AnimationUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C7ECB306911A736C76A4551E55B27F /* AnimationUtils.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		E48D29AA190519A3A4489145E3A39CDF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E6C56B611037AD77EA86182EC4C8257 /* Foundation.framework */; };
+		E4DB32B474C328B2BBC42A8C8833746B /* LocusInterpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1603D71E8289B8B1DDEA9D728A38C36 /* LocusInterpolation.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		E9693C801F7832C549964D70FFADB69D /* SVGEngine.mm in Sources */ = {isa = PBXBuildFile; fileRef = AD5DB7B1D2F42F9F47E7B66977DC133F /* SVGEngine.mm */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		EA6F620EC34BD15FE297A02772191926 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74EB43377860E7D27944C56A0188EC4 /* Node.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		EC91F9A7200B6E29320631EF2F3C6187 /* PocketSVG-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 810684802D90026EAA06CFAC0C5FFA11 /* PocketSVG-dummy.m */; };
+		EDFE12E4CEE8142ED6C52C75C0BCD9FB /* StrokeInterpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3143EC4F99333BB21B56D9F08508F38 /* StrokeInterpolation.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		EF92D4A52AA63232BA5D8D6156FE9563 /* Polygon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39474F2659B674BBDD04A539F637574F /* Polygon.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		F2D89D9FE55887C21A036A96BB56E597 /* MorphingGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE834E700EC218C761873341C397DC4 /* MorphingGenerator.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		F2F32D5B16760F8FE8C3CB599A3C0BE6 /* Macaw-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B25B861B7A331B814A7682CF4420A43 /* Macaw-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F33F0AB91DCDE422AF6FDF02C1D0C48F /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BBE5C1762C3FCA37C3E8AFC73EB7C1 /* Gradient.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		F62E5C90871495575684C5092C6A3B07 /* Easing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D841CADFBAF32A2650BE48759310B14 /* Easing.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		F8865ACA36DDA3104E511931FD78968F /* OpacityGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294F9FD14182D27D497244C8E5E308F5 /* OpacityGenerator.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		F95DA29A5C390C567DDA8EF97F3DC542 /* FillInterpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BA1C6459AE55BE9E72B7CEDAF58AAF /* FillInterpolation.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		F9B1ADAE0A57D534DDD2953639A2FDA7 /* PathSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080CB7C304B0A3D4E4B22A51B2E67332 /* PathSegment.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		FAF5645FFE0E9E67665D64BBA57E18D5 /* Align.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6D1F81E618F4E4B151D10312FE136B /* Align.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		FD10605DAC7EFEC91298B264CCAA52F7 /* LineJoin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9AF04F79A432C1CE0B9B4C145B0710 /* LineJoin.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		FDCF0D06D80C94A93B5E12FBEDF02E2F /* AnimationRestorer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C842BD1F7B33CD40C6B662AB09D869D /* AnimationRestorer.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		FE9D2EE02CB3C52EE55FB485662155CD /* MoveTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3352A023236FBA8A32DF77DFF5FA70A8 /* MoveTo.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		FF15E06CB98A127706EA2D6C40C866D1 /* SVGImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 28BD16D4DE070F15C32753E0F731526C /* SVGImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FF229593701713A7EC5C4BA569BEA99C /* SVGPortability.h in Headers */ = {isa = PBXBuildFile; fileRef = B7386F51CC13E80AC424C715777FCF10 /* SVGPortability.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5D4CF4C7B75D79A02366F4A36F75B085 /* PBXContainerItemProxy */ = {
+		1926BF765FEE402A644844EAA520FB7D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 516C44CEAEEDBFD17014C7BB80AD8CE8;
+			remoteGlobalIDString = CF3A32E5430952DD724352123454B893;
+			remoteInfo = SWXMLHash;
+		};
+		4418268ED1220396C8D540166FB6BA48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D98986199D4F04C546E0E25C7DC731EF;
 			remoteInfo = PocketSVG;
+		};
+		A5289B3C63C5101BD1E57A8B621DAA6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0FFE669DCA4D2CE297C098F710E30911;
+			remoteInfo = Macaw;
+		};
+		D52AE50998A97D3371646A64671DDBDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF3A32E5430952DD724352123454B893;
+			remoteInfo = SWXMLHash;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		09DD6EA9234CA90294325EC5C68F0081 /* Pods-PocketSVG_Animation-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PocketSVG_Animation-acknowledgements.markdown"; sourceTree = "<group>"; };
-		1D5B2020CB547DC246355DE7FD84EFE0 /* Pods-PocketSVG_Animation-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PocketSVG_Animation-resources.sh"; sourceTree = "<group>"; };
-		1EC4F3D23F0196C2C906C8B9744720BB /* SVGPortability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SVGPortability.h; sourceTree = "<group>"; };
-		2B02917EE483F2D2F35219D1C9230587 /* PocketSVG.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PocketSVG.xcconfig; sourceTree = "<group>"; };
-		3AC5D9C5B838BE747D0154460D02F926 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		4D3C0C2E156C4F3936DA6223377EEF98 /* Pods-PocketSVG_Animation-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PocketSVG_Animation-acknowledgements.plist"; sourceTree = "<group>"; };
-		517DA49679BB758379FFFA414AE20D77 /* PocketSVG-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PocketSVG-prefix.pch"; sourceTree = "<group>"; };
-		59E37501CF1B885C6FB8115972292A77 /* SVGImageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SVGImageView.h; sourceTree = "<group>"; };
-		62E00B1D15DE07A7A5BE454448C95616 /* Pods-PocketSVG_Animation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PocketSVG_Animation.debug.xcconfig"; sourceTree = "<group>"; };
-		656CC2040A7A229A3EADD070859BE133 /* SVGLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SVGLayer.m; sourceTree = "<group>"; };
-		660FEDA5E8FD2AC442F57B37B33ED6F0 /* libPocketSVG.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libPocketSVG.a; path = libPocketSVG.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		66986CB8E84E272EC089CC8565708373 /* PocketSVG-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PocketSVG-dummy.m"; sourceTree = "<group>"; };
-		7066148490EEE21F90C21133A08AAD4E /* Pods-PocketSVG_Animation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PocketSVG_Animation.release.xcconfig"; sourceTree = "<group>"; };
-		8B81EFFDEA27A57A03F50D394877DFD5 /* SVGEngine.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = SVGEngine.mm; sourceTree = "<group>"; };
-		91ECA55600661D5D4E316B6C1550E85A /* SVGImageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SVGImageView.m; sourceTree = "<group>"; };
+		00F413D0F2A570A9477178738FE9A7C4 /* SWXMLHash.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SWXMLHash.xcconfig; sourceTree = "<group>"; };
+		02B315450080C3695814C880FB0B72F2 /* PocketSVG.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PocketSVG.framework; path = PocketSVG.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		05345B68B563B53B93321104DE259F9E /* AspectRatio.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AspectRatio.swift; path = Source/model/draw/AspectRatio.swift; sourceTree = "<group>"; };
+		080CB7C304B0A3D4E4B22A51B2E67332 /* PathSegment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PathSegment.swift; path = Source/model/geom2d/PathSegment.swift; sourceTree = "<group>"; };
+		09054B016D11A94AF5CCCFBFAFBD116E /* MorphingAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MorphingAnimation.swift; path = Source/animation/types/MorphingAnimation.swift; sourceTree = "<group>"; };
+		0A1B0FEB97491E4BE84800E133D5DE28 /* PocketSVG.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PocketSVG.xcconfig; sourceTree = "<group>"; };
+		0A3EFB07CABB82CA0D63070846AEB485 /* RenderContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RenderContext.swift; path = Source/render/RenderContext.swift; sourceTree = "<group>"; };
+		0D841CADFBAF32A2650BE48759310B14 /* Easing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Easing.swift; path = Source/animation/Easing.swift; sourceTree = "<group>"; };
+		0F0917CDF25E22544363FDCF9FC037C5 /* RoundRect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RoundRect.swift; path = Source/model/geom2d/RoundRect.swift; sourceTree = "<group>"; };
+		11C574360CB4A3556F429B7D2A7A0716 /* Pods-PocketSVG_Animation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PocketSVG_Animation.debug.xcconfig"; sourceTree = "<group>"; };
+		129A5E9855C4AF0FE8CE77FA43EF0434 /* NodesMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NodesMap.swift; path = Source/views/NodesMap.swift; sourceTree = "<group>"; };
+		13C95C2070E3DFFD59501C4DF47D60F5 /* Pods-PocketSVG_Animation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PocketSVG_Animation.release.xcconfig"; sourceTree = "<group>"; };
+		145B04E6402D5E072DFB01C6F585BCE4 /* TapEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TapEvent.swift; path = Source/events/TapEvent.swift; sourceTree = "<group>"; };
+		1624ACC3C590A271C606B79025FAC4E4 /* PocketSVG.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PocketSVG.modulemap; sourceTree = "<group>"; };
+		18BA4AAFA211DCE8A178A25E532ECCDF /* SceneUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SceneUtils.swift; path = Source/model/scene/SceneUtils.swift; sourceTree = "<group>"; };
+		1A03DD90FA5ABD7F1FA07A2732CAB2D0 /* ShapeLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShapeLayer.swift; path = Source/views/ShapeLayer.swift; sourceTree = "<group>"; };
+		1CCF78EF604D27DAA7C77F41DED6F89F /* CGExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGExtensions.swift; path = Source/animation/layer_animation/CGExtensions.swift; sourceTree = "<group>"; };
+		1D8847F4B1CDF33EC1606BC263CC17CC /* Macaw.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Macaw.framework; path = Macaw.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F9AF04F79A432C1CE0B9B4C145B0710 /* LineJoin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LineJoin.swift; path = Source/model/draw/LineJoin.swift; sourceTree = "<group>"; };
+		1FBDF4C2374BDCB685605FEED492220C /* Stroke.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stroke.swift; path = Source/model/draw/Stroke.swift; sourceTree = "<group>"; };
+		21AE6370E824D4C029EBE9537B9B41DA /* SVGLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SVGLayer.m; sourceTree = "<group>"; };
+		224C8BB5B71427ACBA2B54855807C42C /* TimingFunction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimingFunction.swift; path = Source/animation/types/animation_generators/TimingFunction.swift; sourceTree = "<group>"; };
+		229BE0448882083808FDAB70FB727EB0 /* Pods-PocketSVG_Animation-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PocketSVG_Animation-acknowledgements.plist"; sourceTree = "<group>"; };
+		23BA1C6459AE55BE9E72B7CEDAF58AAF /* FillInterpolation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FillInterpolation.swift; path = Source/animation/layer_animation/Extensions/FillInterpolation.swift; sourceTree = "<group>"; };
+		24AE684100DB4279BDC71D0AC6CD3E6B /* Transform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Transform.swift; path = Source/model/geom2d/Transform.swift; sourceTree = "<group>"; };
+		25006581B9E4636147C7FFE594A18902 /* Image.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Image.swift; path = Source/model/scene/Image.swift; sourceTree = "<group>"; };
+		25E015B018AC63A1D54875B78A0DDEF2 /* Pods-PocketSVG_Animation-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PocketSVG_Animation-dummy.m"; sourceTree = "<group>"; };
+		2646350214D8967014A33A7AEA7A9E4F /* PocketSVG-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PocketSVG-prefix.pch"; sourceTree = "<group>"; };
+		284C086C5548DC95788568331ADCD8C9 /* PocketSVG-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PocketSVG-umbrella.h"; sourceTree = "<group>"; };
+		28BD16D4DE070F15C32753E0F731526C /* SVGImageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SVGImageView.h; sourceTree = "<group>"; };
+		28FD4E1FE839E8B8E8AA75D08D365B27 /* NSTimer+Closure.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSTimer+Closure.swift"; path = "Source/thirdparty/NSTimer+Closure.swift"; sourceTree = "<group>"; };
+		294F9FD14182D27D497244C8E5E308F5 /* OpacityGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OpacityGenerator.swift; path = Source/animation/types/animation_generators/OpacityGenerator.swift; sourceTree = "<group>"; };
+		29D8F4CCB801FB40F93ED27B4D99DF7B /* SVGBezierPath.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = SVGBezierPath.mm; sourceTree = "<group>"; };
+		2C40D24473A25AC5D104E9FB95EA4648 /* PathSegmentType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PathSegmentType.swift; path = Source/model/geom2d/PathSegmentType.swift; sourceTree = "<group>"; };
+		2EAD8897716B6985FCDC667B525D9A33 /* NodeRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NodeRenderer.swift; path = Source/render/NodeRenderer.swift; sourceTree = "<group>"; };
+		2F7B1D21885C56E1FCA898CD0FA0E284 /* Shape.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Shape.swift; path = Source/model/scene/Shape.swift; sourceTree = "<group>"; };
+		30C7ECB306911A736C76A4551E55B27F /* AnimationUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimationUtils.swift; path = Source/animation/AnimationUtils.swift; sourceTree = "<group>"; };
+		326B7A36B79FC3472EC6DAEB459AA75A /* GeomUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GeomUtils.swift; path = Source/model/geom2d/GeomUtils.swift; sourceTree = "<group>"; };
+		3352A023236FBA8A32DF77DFF5FA70A8 /* MoveTo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MoveTo.swift; path = Source/model/geom2d/MoveTo.swift; sourceTree = "<group>"; };
+		368303C07E3468C33FD222E276944C69 /* Effect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Effect.swift; path = Source/model/draw/Effect.swift; sourceTree = "<group>"; };
+		36F2F2FDE4503B2F5C441F2AE37B5E42 /* SVGConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SVGConstants.swift; path = Source/svg/SVGConstants.swift; sourceTree = "<group>"; };
+		39474F2659B674BBDD04A539F637574F /* Polygon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Polygon.swift; path = Source/model/geom2d/Polygon.swift; sourceTree = "<group>"; };
+		3B25B861B7A331B814A7682CF4420A43 /* Macaw-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Macaw-umbrella.h"; sourceTree = "<group>"; };
+		3C5A5E8CE1428527CF909BA1815D789B /* Arc.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Arc.swift; path = Source/model/geom2d/Arc.swift; sourceTree = "<group>"; };
+		3D7B1C5C9E2A537D4F66E4D528D496AA /* GroupDisposable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GroupDisposable.swift; path = Source/bindings/GroupDisposable.swift; sourceTree = "<group>"; };
+		40F5D9A3880EFDEABDC609DE180406D2 /* Pods-PocketSVG_Animation-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PocketSVG_Animation-acknowledgements.markdown"; sourceTree = "<group>"; };
+		436E35802FC47742921B135B29236840 /* Group.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Group.swift; path = Source/model/scene/Group.swift; sourceTree = "<group>"; };
+		44756F4ACF35B19169FFB7E8ADC94EA4 /* Disposable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Disposable.swift; path = Source/bindings/Disposable.swift; sourceTree = "<group>"; };
+		498FFDDFD1F911593CC771107F8264C1 /* Macaw-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Macaw-dummy.m"; sourceTree = "<group>"; };
+		4B44D775EE512E452E2AFCCF59910276 /* SVGEngine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SVGEngine.h; sourceTree = "<group>"; };
+		4BB6622E734C514D229BD9CBFF08649D /* PanEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PanEvent.swift; path = Source/events/PanEvent.swift; sourceTree = "<group>"; };
+		4E7D596DBCCBE7312F3B4C8C8EF07E65 /* ShapeRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShapeRenderer.swift; path = Source/render/ShapeRenderer.swift; sourceTree = "<group>"; };
+		4F4CB55EA7CC4D109992EFA12391E2BA /* AnimatableVariable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatableVariable.swift; path = Source/animation/AnimatableVariable.swift; sourceTree = "<group>"; };
+		53BAD190D85DAD8808984CAD62E21AE6 /* Locus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Locus.swift; path = Source/model/geom2d/Locus.swift; sourceTree = "<group>"; };
+		54DAD6FF1537A6108DD4DB7FF78F17C3 /* Rect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Rect.swift; path = Source/model/geom2d/Rect.swift; sourceTree = "<group>"; };
+		567E7262A27A37E0BAA45B86AC4D9AF0 /* SVGParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SVGParser.swift; path = Source/svg/SVGParser.swift; sourceTree = "<group>"; };
+		56B01B33304622AE02DE91D3D933355B /* PathBounds.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PathBounds.swift; path = Source/animation/layer_animation/PathBounds.swift; sourceTree = "<group>"; };
+		5718C6D83BBE4033C4F998C2136A3493 /* SWXMLHash-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SWXMLHash-dummy.m"; sourceTree = "<group>"; };
+		574848E834B51DD7A66BF4513094CD90 /* PathBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PathBuilder.swift; path = Source/model/geom2d/PathBuilder.swift; sourceTree = "<group>"; };
+		59D11B0CF80371AADA5348215E4FF8FB /* SWXMLHash.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SWXMLHash.modulemap; sourceTree = "<group>"; };
+		5A53A7723EB74F8A3AE8B98AE2497E35 /* ShapeAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShapeAnimation.swift; path = Source/animation/types/ShapeAnimation.swift; sourceTree = "<group>"; };
+		5DB0720082AEB078398366059657E493 /* SWXMLHash-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SWXMLHash-prefix.pch"; sourceTree = "<group>"; };
+		5E6C56B611037AD77EA86182EC4C8257 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5FCFBAFC68BEB98AB2D934D90F1CBD69 /* Animation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Animation.swift; path = Source/animation/Animation.swift; sourceTree = "<group>"; };
+		6A54484377E4B0FED9EC3B5667967611 /* TouchEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TouchEvent.swift; path = Source/events/TouchEvent.swift; sourceTree = "<group>"; };
+		6B191A995C9765614E86F8B9E6B803B6 /* SWXMLHash.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SWXMLHash.swift; path = Source/SWXMLHash.swift; sourceTree = "<group>"; };
+		6BB492E5C932C9953C8EEAE297FBBC70 /* TransformGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformGenerator.swift; path = Source/animation/types/animation_generators/TransformGenerator.swift; sourceTree = "<group>"; };
+		6C70EDA5C97327C1291987D8A44B7AA5 /* Ellipse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Ellipse.swift; path = Source/model/geom2d/Ellipse.swift; sourceTree = "<group>"; };
+		6DA5C161C67298391A828A8892ABCCB1 /* MacawView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MacawView.swift; path = Source/views/MacawView.swift; sourceTree = "<group>"; };
+		71E82D8C7C334B7CC0A36A6C22654320 /* Point.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Point.swift; path = Source/model/geom2d/Point.swift; sourceTree = "<group>"; };
+		724C8E07358DAA1AAA34AEBDA7F45912 /* RotateEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RotateEvent.swift; path = Source/events/RotateEvent.swift; sourceTree = "<group>"; };
+		78CDC3FA78B26EA8F4BBDBAF7447D8CF /* Circle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Circle.swift; path = Source/model/geom2d/Circle.swift; sourceTree = "<group>"; };
+		7A86D1EBCE121CF03FC9544F8C8A8D86 /* RadialGradient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RadialGradient.swift; path = Source/model/draw/RadialGradient.swift; sourceTree = "<group>"; };
+		7B1665D1363FA0C5EAB28D815B49EBEB /* AnimationProducer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimationProducer.swift; path = Source/animation/AnimationProducer.swift; sourceTree = "<group>"; };
+		7C313E9B23287F178AEEC3A6C3EEB27A /* Fill.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Fill.swift; path = Source/model/draw/Fill.swift; sourceTree = "<group>"; };
+		7C540217C20D11E493B97E732497EF29 /* Pods_PocketSVG_Animation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PocketSVG_Animation.framework; path = "Pods-PocketSVG_Animation.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C562D0CFF4F7E1DA3A1932C1954428B /* ContentsAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContentsAnimation.swift; path = Source/animation/types/ContentsAnimation.swift; sourceTree = "<group>"; };
+		810684802D90026EAA06CFAC0C5FFA11 /* PocketSVG-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PocketSVG-dummy.m"; sourceTree = "<group>"; };
+		84D5A9C213909A8E0250FB5EF94143D8 /* SVGParserRegexHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SVGParserRegexHelper.swift; path = Source/svg/SVGParserRegexHelper.swift; sourceTree = "<group>"; };
+		85D182C3CB2186849344B8E623003EE1 /* Font.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Font.swift; path = Source/model/draw/Font.swift; sourceTree = "<group>"; };
+		873E735BEA15749F87EE2B992F1F98C6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87816CED5464AEB63F868B97484F4D51 /* Pods-PocketSVG_Animation.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-PocketSVG_Animation.modulemap"; sourceTree = "<group>"; };
+		8875B2AD6D172F3411CC945C071A4EC4 /* Variable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Variable.swift; path = Source/bindings/Variable.swift; sourceTree = "<group>"; };
+		891244A47925A722D1EAD16137025235 /* AnimOperators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimOperators.swift; path = Source/animation/layer_animation/Extensions/AnimOperators.swift; sourceTree = "<group>"; };
+		8D505CEC66F82E3C627A2297FE73CB0B /* ContentsInterpolation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContentsInterpolation.swift; path = Source/animation/layer_animation/Extensions/ContentsInterpolation.swift; sourceTree = "<group>"; };
+		8E50C3EDA55AA697F40EBBF80779DAE8 /* PathFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PathFunctions.swift; path = Source/animation/layer_animation/PathFunctions.swift; sourceTree = "<group>"; };
+		8E56A0FFA1299C095B19C6269732EB7C /* DoubleInterpolation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DoubleInterpolation.swift; path = Source/animation/layer_animation/Extensions/DoubleInterpolation.swift; sourceTree = "<group>"; };
+		9009160C60CF2E2266A9B90DEC608437 /* SVGParserError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SVGParserError.swift; path = Source/svg/SVGParserError.swift; sourceTree = "<group>"; };
+		91B7EFD23EC4A1C1C325EC7BE26487A8 /* TransformAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformAnimation.swift; path = Source/animation/types/TransformAnimation.swift; sourceTree = "<group>"; };
+		92589485D80A84561230219830B6B6DC /* Macaw-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Macaw-prefix.pch"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		96F44362ED84CCFB657B441C75ACA00F /* PocketSVG.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PocketSVG.h; sourceTree = "<group>"; };
-		A71D929C055DE15C541F2546076584DE /* SVGEngine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SVGEngine.h; sourceTree = "<group>"; };
-		AE09811F3D0CDA9BD21CEC7219441209 /* Pods-PocketSVG_Animation-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PocketSVG_Animation-frameworks.sh"; sourceTree = "<group>"; };
-		AEFEEA598446C13FE293401967DED175 /* SVGBezierPath.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = SVGBezierPath.mm; sourceTree = "<group>"; };
-		B5704F361DBBB1BCF8BCDE4198A90219 /* SVGLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SVGLayer.h; sourceTree = "<group>"; };
-		BACC64101FAE4862F8806DB02FC71B0E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		CDC8BB3BB7EC6AAC47349DD128ABF2FB /* Pods-PocketSVG_Animation-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PocketSVG_Animation-dummy.m"; sourceTree = "<group>"; };
-		D6370B122521DA671820DB1F71233D0A /* SVGBezierPath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SVGBezierPath.h; sourceTree = "<group>"; };
-		F2D0C223C483E57825B1DA884A4272F6 /* libPods-PocketSVG_Animation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-PocketSVG_Animation.a"; path = "libPods-PocketSVG_Animation.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		948A4ADB4326C2A2CA3F68616DF3F4B3 /* TextRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextRenderer.swift; path = Source/render/TextRenderer.swift; sourceTree = "<group>"; };
+		952A162462F7E935C28D5F0D41BD6A26 /* SWXMLHash-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SWXMLHash-umbrella.h"; sourceTree = "<group>"; };
+		9587D157FF14538A2C4E9E92905D76FA /* PocketSVG.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PocketSVG.h; sourceTree = "<group>"; };
+		9596730A81DC6005CB65A0C0E0DB4DA1 /* Polyline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Polyline.swift; path = Source/model/geom2d/Polyline.swift; sourceTree = "<group>"; };
+		96205D24D413C2CDE6CC0793926973C7 /* Baseline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Baseline.swift; path = Source/model/draw/Baseline.swift; sourceTree = "<group>"; };
+		98B7D7DFD7F596B78992EEB1C41EC754 /* Event.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Event.swift; path = Source/events/Event.swift; sourceTree = "<group>"; };
+		9ADA6A24AC29A936A2D64F03A815367A /* AnimationImpl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimationImpl.swift; path = Source/animation/AnimationImpl.swift; sourceTree = "<group>"; };
+		9B917E0C9C85007844AC18A405D9F690 /* TransformHashable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformHashable.swift; path = Source/animation/types/animation_generators/Cache/TransformHashable.swift; sourceTree = "<group>"; };
+		9C842BD1F7B33CD40C6B662AB09D869D /* AnimationRestorer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimationRestorer.swift; path = Source/animation/types/animation_generators/Cache/AnimationRestorer.swift; sourceTree = "<group>"; };
+		A0F144BC9B26E1FDA48868D68E89BA73 /* PinchEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PinchEvent.swift; path = Source/events/PinchEvent.swift; sourceTree = "<group>"; };
+		A2062CC11F8CC6E2527A923E684DDDB0 /* OpacityAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OpacityAnimation.swift; path = Source/animation/types/OpacityAnimation.swift; sourceTree = "<group>"; };
+		A2E616E5DCAF3AA59E9B0195E8311C8C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		A487B496A61B102C6898B6AF1CD7E6AF /* LinearGradient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LinearGradient.swift; path = Source/model/draw/LinearGradient.swift; sourceTree = "<group>"; };
+		A5D138BC8BE68AEE4C9EDE3E5F44BF87 /* SWXMLHash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SWXMLHash.framework; path = SWXMLHash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5D156B877CFB7135298B33597C68670 /* ShapeAnimationGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShapeAnimationGenerator.swift; path = Source/animation/types/animation_generators/ShapeAnimationGenerator.swift; sourceTree = "<group>"; };
+		ABC5F4793C9BD43B4DC1FC1C6FCB9CC5 /* AnimationSequence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimationSequence.swift; path = Source/animation/types/AnimationSequence.swift; sourceTree = "<group>"; };
+		ABF4425C96311519C6F154D5E03DA3E3 /* Pods-PocketSVG_Animation-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PocketSVG_Animation-umbrella.h"; sourceTree = "<group>"; };
+		AC5A3B239037E00D2E2BDAF8B37A389D /* SWXMLHash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SWXMLHash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD5DB7B1D2F42F9F47E7B66977DC133F /* SVGEngine.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = SVGEngine.mm; sourceTree = "<group>"; };
+		B178492FB735D10F3CC4C6860ED917FA /* Macaw.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Macaw.modulemap; sourceTree = "<group>"; };
+		B242C52B836A592378ED02F8DF3D905D /* RenderUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RenderUtils.swift; path = Source/render/RenderUtils.swift; sourceTree = "<group>"; };
+		B2F86125939AA70A27F2691365D9898B /* CombineAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CombineAnimation.swift; path = Source/animation/types/CombineAnimation.swift; sourceTree = "<group>"; };
+		B3143EC4F99333BB21B56D9F08508F38 /* StrokeInterpolation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StrokeInterpolation.swift; path = Source/animation/layer_animation/Extensions/StrokeInterpolation.swift; sourceTree = "<group>"; };
+		B548C5BF28414484D0C524EAF2C56806 /* CGFloat+Double.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGFloat+Double.swift"; path = "Source/thirdparty/CGFloat+Double.swift"; sourceTree = "<group>"; };
+		B56372BB9B6F70F7FD24E058F99B50B3 /* SVGImageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SVGImageView.m; sourceTree = "<group>"; };
+		B7386F51CC13E80AC424C715777FCF10 /* SVGPortability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SVGPortability.h; sourceTree = "<group>"; };
+		B9C36FF2F2AFFDF23ACD480402126782 /* TransformInterpolation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformInterpolation.swift; path = Source/animation/layer_animation/Extensions/TransformInterpolation.swift; sourceTree = "<group>"; };
+		BA75C23538C0CE37874B0F50B9130497 /* GaussianBlur.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GaussianBlur.swift; path = Source/model/draw/GaussianBlur.swift; sourceTree = "<group>"; };
+		BB038621B1F097688584BBB02C2D3416 /* DropShadow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropShadow.swift; path = Source/model/draw/DropShadow.swift; sourceTree = "<group>"; };
+		BB4EA4E9A6C4104857AC46DFC693E3D3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD206C9E82685F390B17AA5447A48F76 /* SVGLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SVGLayer.h; sourceTree = "<group>"; };
+		BE1DFC9602DF5A34D343B68BAE83B8C8 /* FuncBounds.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FuncBounds.swift; path = Source/animation/layer_animation/FuncBounds.swift; sourceTree = "<group>"; };
+		C156BC77D7BC907519BE1397F194955A /* Path.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Path.swift; path = Source/model/geom2d/Path.swift; sourceTree = "<group>"; };
+		C362C9D4DAF7C1FD194169AC0EAD8702 /* NodeHashable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NodeHashable.swift; path = Source/animation/types/animation_generators/Cache/NodeHashable.swift; sourceTree = "<group>"; };
+		C4BBE5C1762C3FCA37C3E8AFC73EB7C1 /* Gradient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Gradient.swift; path = Source/model/draw/Gradient.swift; sourceTree = "<group>"; };
+		CE42AC96E0E5CBE9F68B913B58DCD24E /* Drawable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Drawable.swift; path = Source/model/draw/Drawable.swift; sourceTree = "<group>"; };
+		CE62867ABA39D09794420009D24E1997 /* AnimationCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimationCache.swift; path = Source/animation/types/animation_generators/Cache/AnimationCache.swift; sourceTree = "<group>"; };
+		CE7352828C7305376B5881AB21D4C0C4 /* ImageRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageRenderer.swift; path = Source/render/ImageRenderer.swift; sourceTree = "<group>"; };
+		CFACEE87D5F86C289958D17A60916976 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D09B272676A8F20C2C25DBF5951EC4F1 /* SWXMLHash+TypeConversion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SWXMLHash+TypeConversion.swift"; path = "Source/SWXMLHash+TypeConversion.swift"; sourceTree = "<group>"; };
+		D1603D71E8289B8B1DDEA9D728A38C36 /* LocusInterpolation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocusInterpolation.swift; path = Source/animation/layer_animation/Extensions/LocusInterpolation.swift; sourceTree = "<group>"; };
+		D1C28EB4F451229E0D6D69428631261C /* Interpolable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Interpolable.swift; path = Source/animation/layer_animation/Extensions/Interpolable.swift; sourceTree = "<group>"; };
+		D1DF99493E7A8C35F3FEB12C1C1448F5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = Source/Info.plist; sourceTree = "<group>"; };
+		D2BA530B2C4BDB534807E28DD07029BD /* SVGView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SVGView.swift; path = Source/svg/SVGView.swift; sourceTree = "<group>"; };
+		D4273124FD8474F2C47F266EA4044EE8 /* Color.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Color.swift; path = Source/model/draw/Color.swift; sourceTree = "<group>"; };
+		D4BD99F9306F9DD12BE886DA1DB3A6B7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D56BA1C1F6327B2B8ACEA066088B2381 /* Text.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Text.swift; path = Source/model/scene/Text.swift; sourceTree = "<group>"; };
+		D8E9DEC99BDB4DBCF93A116DEB733393 /* GroupRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GroupRenderer.swift; path = Source/render/GroupRenderer.swift; sourceTree = "<group>"; };
+		DA96FECB854189D9B6885656AD097DE2 /* ShapeInterpolation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShapeInterpolation.swift; path = Source/animation/layer_animation/Extensions/ShapeInterpolation.swift; sourceTree = "<group>"; };
+		DACAC56980DB58AAEF4BB92914BD2F21 /* SVGBezierPath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SVGBezierPath.h; sourceTree = "<group>"; };
+		DEA2E1A47A5DCC47AFAE598EA45B16BC /* Macaw.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Macaw.xcconfig; sourceTree = "<group>"; };
+		E011E40D7571A140AA82D12F3FC226A8 /* Pods-PocketSVG_Animation-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PocketSVG_Animation-frameworks.sh"; sourceTree = "<group>"; };
+		E143A4D54F3DFE187E77B3487F237BC6 /* CAAnimationClosure.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CAAnimationClosure.swift; path = Source/thirdparty/CAAnimationClosure.swift; sourceTree = "<group>"; };
+		E18FEE60B3B3F6658C3612FC8A41C197 /* Size.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Size.swift; path = Source/model/geom2d/Size.swift; sourceTree = "<group>"; };
+		E74EB43377860E7D27944C56A0188EC4 /* Node.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Node.swift; path = Source/model/scene/Node.swift; sourceTree = "<group>"; };
+		E8A031CB2AD95A5DCC9A8941510B27E8 /* Stop.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stop.swift; path = Source/model/draw/Stop.swift; sourceTree = "<group>"; };
+		E8FF50EA84943AF06AFA61367A09CFA3 /* LineCap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LineCap.swift; path = Source/model/draw/LineCap.swift; sourceTree = "<group>"; };
+		EB6D1F81E618F4E4B151D10312FE136B /* Align.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Align.swift; path = Source/model/draw/Align.swift; sourceTree = "<group>"; };
+		ECA2D5A0F81DE96E67F6E8FB18FF48AF /* Line.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Line.swift; path = Source/model/geom2d/Line.swift; sourceTree = "<group>"; };
+		F72E78E790D849BBA69075BA13B7E315 /* Pods-PocketSVG_Animation-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PocketSVG_Animation-resources.sh"; sourceTree = "<group>"; };
+		FB0AF2F21B2610EFF541484C9F86F5FC /* Insets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Insets.swift; path = Source/model/geom2d/Insets.swift; sourceTree = "<group>"; };
+		FBE834E700EC218C761873341C397DC4 /* MorphingGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MorphingGenerator.swift; path = Source/animation/types/animation_generators/MorphingGenerator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5B057684FDCF11A2B060BE122537AC75 /* Frameworks */ = {
+		12EF69E24FA9912293F588204A8852FC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDA989F7AC6670C1AA881CD6DE3DBBAC /* Foundation.framework in Frameworks */,
+				14C48B24924292666EFE758FF1891BE6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FE81C176B3FF8CBC02639461E5F755B1 /* Frameworks */ = {
+		205807FE5C1C99DE2CCAED124C1B6884 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BDB4D57C11AEF37AFF83AE2C459721D /* Foundation.framework in Frameworks */,
-				EFAD268740876256FD5A4083324AA307 /* QuartzCore.framework in Frameworks */,
+				E48D29AA190519A3A4489145E3A39CDF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37C548052CEDD851591354643E9EF762 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBE39FC5414772AF455120CFE5D89B87 /* Foundation.framework in Frameworks */,
+				68B43B55E26B48344776FF5C45785A32 /* SWXMLHash.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A738DD2D74FC9564F9DD542B4DEAA1CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93D84F8899C04A560A8605CBA4875A4B /* Foundation.framework in Frameworks */,
+				B8705BF6268DF2665AA8E46AB87A3123 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		082FE8F611580C2FC3DFEF058348579F /* Support Files */ = {
+		3BE27F9904A0103FA69103FDCD3BCAC5 /* Macaw */ = {
 			isa = PBXGroup;
 			children = (
-				2B02917EE483F2D2F35219D1C9230587 /* PocketSVG.xcconfig */,
-				66986CB8E84E272EC089CC8565708373 /* PocketSVG-dummy.m */,
-				517DA49679BB758379FFFA414AE20D77 /* PocketSVG-prefix.pch */,
+				EB6D1F81E618F4E4B151D10312FE136B /* Align.swift */,
+				4F4CB55EA7CC4D109992EFA12391E2BA /* AnimatableVariable.swift */,
+				5FCFBAFC68BEB98AB2D934D90F1CBD69 /* Animation.swift */,
+				CE62867ABA39D09794420009D24E1997 /* AnimationCache.swift */,
+				9ADA6A24AC29A936A2D64F03A815367A /* AnimationImpl.swift */,
+				7B1665D1363FA0C5EAB28D815B49EBEB /* AnimationProducer.swift */,
+				9C842BD1F7B33CD40C6B662AB09D869D /* AnimationRestorer.swift */,
+				ABC5F4793C9BD43B4DC1FC1C6FCB9CC5 /* AnimationSequence.swift */,
+				30C7ECB306911A736C76A4551E55B27F /* AnimationUtils.swift */,
+				891244A47925A722D1EAD16137025235 /* AnimOperators.swift */,
+				3C5A5E8CE1428527CF909BA1815D789B /* Arc.swift */,
+				05345B68B563B53B93321104DE259F9E /* AspectRatio.swift */,
+				96205D24D413C2CDE6CC0793926973C7 /* Baseline.swift */,
+				E143A4D54F3DFE187E77B3487F237BC6 /* CAAnimationClosure.swift */,
+				1CCF78EF604D27DAA7C77F41DED6F89F /* CGExtensions.swift */,
+				B548C5BF28414484D0C524EAF2C56806 /* CGFloat+Double.swift */,
+				78CDC3FA78B26EA8F4BBDBAF7447D8CF /* Circle.swift */,
+				D4273124FD8474F2C47F266EA4044EE8 /* Color.swift */,
+				B2F86125939AA70A27F2691365D9898B /* CombineAnimation.swift */,
+				7C562D0CFF4F7E1DA3A1932C1954428B /* ContentsAnimation.swift */,
+				8D505CEC66F82E3C627A2297FE73CB0B /* ContentsInterpolation.swift */,
+				44756F4ACF35B19169FFB7E8ADC94EA4 /* Disposable.swift */,
+				8E56A0FFA1299C095B19C6269732EB7C /* DoubleInterpolation.swift */,
+				CE42AC96E0E5CBE9F68B913B58DCD24E /* Drawable.swift */,
+				BB038621B1F097688584BBB02C2D3416 /* DropShadow.swift */,
+				0D841CADFBAF32A2650BE48759310B14 /* Easing.swift */,
+				368303C07E3468C33FD222E276944C69 /* Effect.swift */,
+				6C70EDA5C97327C1291987D8A44B7AA5 /* Ellipse.swift */,
+				98B7D7DFD7F596B78992EEB1C41EC754 /* Event.swift */,
+				7C313E9B23287F178AEEC3A6C3EEB27A /* Fill.swift */,
+				23BA1C6459AE55BE9E72B7CEDAF58AAF /* FillInterpolation.swift */,
+				85D182C3CB2186849344B8E623003EE1 /* Font.swift */,
+				BE1DFC9602DF5A34D343B68BAE83B8C8 /* FuncBounds.swift */,
+				BA75C23538C0CE37874B0F50B9130497 /* GaussianBlur.swift */,
+				326B7A36B79FC3472EC6DAEB459AA75A /* GeomUtils.swift */,
+				C4BBE5C1762C3FCA37C3E8AFC73EB7C1 /* Gradient.swift */,
+				436E35802FC47742921B135B29236840 /* Group.swift */,
+				3D7B1C5C9E2A537D4F66E4D528D496AA /* GroupDisposable.swift */,
+				D8E9DEC99BDB4DBCF93A116DEB733393 /* GroupRenderer.swift */,
+				25006581B9E4636147C7FFE594A18902 /* Image.swift */,
+				CE7352828C7305376B5881AB21D4C0C4 /* ImageRenderer.swift */,
+				D1DF99493E7A8C35F3FEB12C1C1448F5 /* Info.plist */,
+				FB0AF2F21B2610EFF541484C9F86F5FC /* Insets.swift */,
+				D1C28EB4F451229E0D6D69428631261C /* Interpolable.swift */,
+				ECA2D5A0F81DE96E67F6E8FB18FF48AF /* Line.swift */,
+				A487B496A61B102C6898B6AF1CD7E6AF /* LinearGradient.swift */,
+				E8FF50EA84943AF06AFA61367A09CFA3 /* LineCap.swift */,
+				1F9AF04F79A432C1CE0B9B4C145B0710 /* LineJoin.swift */,
+				53BAD190D85DAD8808984CAD62E21AE6 /* Locus.swift */,
+				D1603D71E8289B8B1DDEA9D728A38C36 /* LocusInterpolation.swift */,
+				6DA5C161C67298391A828A8892ABCCB1 /* MacawView.swift */,
+				09054B016D11A94AF5CCCFBFAFBD116E /* MorphingAnimation.swift */,
+				FBE834E700EC218C761873341C397DC4 /* MorphingGenerator.swift */,
+				3352A023236FBA8A32DF77DFF5FA70A8 /* MoveTo.swift */,
+				E74EB43377860E7D27944C56A0188EC4 /* Node.swift */,
+				C362C9D4DAF7C1FD194169AC0EAD8702 /* NodeHashable.swift */,
+				2EAD8897716B6985FCDC667B525D9A33 /* NodeRenderer.swift */,
+				129A5E9855C4AF0FE8CE77FA43EF0434 /* NodesMap.swift */,
+				28FD4E1FE839E8B8E8AA75D08D365B27 /* NSTimer+Closure.swift */,
+				A2062CC11F8CC6E2527A923E684DDDB0 /* OpacityAnimation.swift */,
+				294F9FD14182D27D497244C8E5E308F5 /* OpacityGenerator.swift */,
+				4BB6622E734C514D229BD9CBFF08649D /* PanEvent.swift */,
+				C156BC77D7BC907519BE1397F194955A /* Path.swift */,
+				56B01B33304622AE02DE91D3D933355B /* PathBounds.swift */,
+				574848E834B51DD7A66BF4513094CD90 /* PathBuilder.swift */,
+				8E50C3EDA55AA697F40EBBF80779DAE8 /* PathFunctions.swift */,
+				080CB7C304B0A3D4E4B22A51B2E67332 /* PathSegment.swift */,
+				2C40D24473A25AC5D104E9FB95EA4648 /* PathSegmentType.swift */,
+				A0F144BC9B26E1FDA48868D68E89BA73 /* PinchEvent.swift */,
+				71E82D8C7C334B7CC0A36A6C22654320 /* Point.swift */,
+				39474F2659B674BBDD04A539F637574F /* Polygon.swift */,
+				9596730A81DC6005CB65A0C0E0DB4DA1 /* Polyline.swift */,
+				7A86D1EBCE121CF03FC9544F8C8A8D86 /* RadialGradient.swift */,
+				54DAD6FF1537A6108DD4DB7FF78F17C3 /* Rect.swift */,
+				0A3EFB07CABB82CA0D63070846AEB485 /* RenderContext.swift */,
+				B242C52B836A592378ED02F8DF3D905D /* RenderUtils.swift */,
+				724C8E07358DAA1AAA34AEBDA7F45912 /* RotateEvent.swift */,
+				0F0917CDF25E22544363FDCF9FC037C5 /* RoundRect.swift */,
+				18BA4AAFA211DCE8A178A25E532ECCDF /* SceneUtils.swift */,
+				2F7B1D21885C56E1FCA898CD0FA0E284 /* Shape.swift */,
+				5A53A7723EB74F8A3AE8B98AE2497E35 /* ShapeAnimation.swift */,
+				A5D156B877CFB7135298B33597C68670 /* ShapeAnimationGenerator.swift */,
+				DA96FECB854189D9B6885656AD097DE2 /* ShapeInterpolation.swift */,
+				1A03DD90FA5ABD7F1FA07A2732CAB2D0 /* ShapeLayer.swift */,
+				4E7D596DBCCBE7312F3B4C8C8EF07E65 /* ShapeRenderer.swift */,
+				E18FEE60B3B3F6658C3612FC8A41C197 /* Size.swift */,
+				E8A031CB2AD95A5DCC9A8941510B27E8 /* Stop.swift */,
+				1FBDF4C2374BDCB685605FEED492220C /* Stroke.swift */,
+				B3143EC4F99333BB21B56D9F08508F38 /* StrokeInterpolation.swift */,
+				36F2F2FDE4503B2F5C441F2AE37B5E42 /* SVGConstants.swift */,
+				567E7262A27A37E0BAA45B86AC4D9AF0 /* SVGParser.swift */,
+				9009160C60CF2E2266A9B90DEC608437 /* SVGParserError.swift */,
+				84D5A9C213909A8E0250FB5EF94143D8 /* SVGParserRegexHelper.swift */,
+				D2BA530B2C4BDB534807E28DD07029BD /* SVGView.swift */,
+				145B04E6402D5E072DFB01C6F585BCE4 /* TapEvent.swift */,
+				D56BA1C1F6327B2B8ACEA066088B2381 /* Text.swift */,
+				948A4ADB4326C2A2CA3F68616DF3F4B3 /* TextRenderer.swift */,
+				224C8BB5B71427ACBA2B54855807C42C /* TimingFunction.swift */,
+				6A54484377E4B0FED9EC3B5667967611 /* TouchEvent.swift */,
+				24AE684100DB4279BDC71D0AC6CD3E6B /* Transform.swift */,
+				91B7EFD23EC4A1C1C325EC7BE26487A8 /* TransformAnimation.swift */,
+				6BB492E5C932C9953C8EEAE297FBBC70 /* TransformGenerator.swift */,
+				9B917E0C9C85007844AC18A405D9F690 /* TransformHashable.swift */,
+				B9C36FF2F2AFFDF23ACD480402126782 /* TransformInterpolation.swift */,
+				8875B2AD6D172F3411CC945C071A4EC4 /* Variable.swift */,
+				64939F02E4F3D2BA9D7C2D365C9AA769 /* Support Files */,
+			);
+			name = Macaw;
+			path = Macaw;
+			sourceTree = "<group>";
+		};
+		3EE60900CDACAD0DD619D123635C6BF2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D8847F4B1CDF33EC1606BC263CC17CC /* Macaw.framework */,
+				02B315450080C3695814C880FB0B72F2 /* PocketSVG.framework */,
+				7C540217C20D11E493B97E732497EF29 /* Pods_PocketSVG_Animation.framework */,
+				A5D138BC8BE68AEE4C9EDE3E5F44BF87 /* SWXMLHash.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4CDAFC070F45664A6D6AC34EC3268DF8 /* SWXMLHash */ = {
+			isa = PBXGroup;
+			children = (
+				6B191A995C9765614E86F8B9E6B803B6 /* SWXMLHash.swift */,
+				D09B272676A8F20C2C25DBF5951EC4F1 /* SWXMLHash+TypeConversion.swift */,
+				BDE3741160B8F12D0C0B0E9365224B20 /* Support Files */,
+			);
+			name = SWXMLHash;
+			path = SWXMLHash;
+			sourceTree = "<group>";
+		};
+		64939F02E4F3D2BA9D7C2D365C9AA769 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CFACEE87D5F86C289958D17A60916976 /* Info.plist */,
+				B178492FB735D10F3CC4C6860ED917FA /* Macaw.modulemap */,
+				DEA2E1A47A5DCC47AFAE598EA45B16BC /* Macaw.xcconfig */,
+				498FFDDFD1F911593CC771107F8264C1 /* Macaw-dummy.m */,
+				92589485D80A84561230219830B6B6DC /* Macaw-prefix.pch */,
+				3B25B861B7A331B814A7682CF4420A43 /* Macaw-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Macaw";
+			sourceTree = "<group>";
+		};
+		71D70BA62ABDA78EAE79AE21A673FCF8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BB4EA4E9A6C4104857AC46DFC693E3D3 /* Info.plist */,
+				1624ACC3C590A271C606B79025FAC4E4 /* PocketSVG.modulemap */,
+				0A1B0FEB97491E4BE84800E133D5DE28 /* PocketSVG.xcconfig */,
+				810684802D90026EAA06CFAC0C5FFA11 /* PocketSVG-dummy.m */,
+				2646350214D8967014A33A7AEA7A9E4F /* PocketSVG-prefix.pch */,
+				284C086C5548DC95788568331ADCD8C9 /* PocketSVG-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/PocketSVG";
 			sourceTree = "<group>";
 		};
-		20195C4B5B36CF69EA26F61A40216913 /* Pods-PocketSVG_Animation */ = {
+		7CE7DABDEA45B91A21C8E96392F01871 /* Pods-PocketSVG_Animation */ = {
 			isa = PBXGroup;
 			children = (
-				09DD6EA9234CA90294325EC5C68F0081 /* Pods-PocketSVG_Animation-acknowledgements.markdown */,
-				4D3C0C2E156C4F3936DA6223377EEF98 /* Pods-PocketSVG_Animation-acknowledgements.plist */,
-				CDC8BB3BB7EC6AAC47349DD128ABF2FB /* Pods-PocketSVG_Animation-dummy.m */,
-				AE09811F3D0CDA9BD21CEC7219441209 /* Pods-PocketSVG_Animation-frameworks.sh */,
-				1D5B2020CB547DC246355DE7FD84EFE0 /* Pods-PocketSVG_Animation-resources.sh */,
-				62E00B1D15DE07A7A5BE454448C95616 /* Pods-PocketSVG_Animation.debug.xcconfig */,
-				7066148490EEE21F90C21133A08AAD4E /* Pods-PocketSVG_Animation.release.xcconfig */,
+				D4BD99F9306F9DD12BE886DA1DB3A6B7 /* Info.plist */,
+				87816CED5464AEB63F868B97484F4D51 /* Pods-PocketSVG_Animation.modulemap */,
+				40F5D9A3880EFDEABDC609DE180406D2 /* Pods-PocketSVG_Animation-acknowledgements.markdown */,
+				229BE0448882083808FDAB70FB727EB0 /* Pods-PocketSVG_Animation-acknowledgements.plist */,
+				25E015B018AC63A1D54875B78A0DDEF2 /* Pods-PocketSVG_Animation-dummy.m */,
+				E011E40D7571A140AA82D12F3FC226A8 /* Pods-PocketSVG_Animation-frameworks.sh */,
+				F72E78E790D849BBA69075BA13B7E315 /* Pods-PocketSVG_Animation-resources.sh */,
+				ABF4425C96311519C6F154D5E03DA3E3 /* Pods-PocketSVG_Animation-umbrella.h */,
+				11C574360CB4A3556F429B7D2A7A0716 /* Pods-PocketSVG_Animation.debug.xcconfig */,
+				13C95C2070E3DFFD59501C4DF47D60F5 /* Pods-PocketSVG_Animation.release.xcconfig */,
 			);
 			name = "Pods-PocketSVG_Animation";
 			path = "Target Support Files/Pods-PocketSVG_Animation";
-			sourceTree = "<group>";
-		};
-		29A2564912C51A239D8600ED5D47E1CB /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				5F4A734C928116655077A4ED2CBD08FC /* PocketSVG */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C7AB6F27FF3606F9360547F8F1977A63 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		5F4A734C928116655077A4ED2CBD08FC /* PocketSVG */ = {
-			isa = PBXGroup;
-			children = (
-				96F44362ED84CCFB657B441C75ACA00F /* PocketSVG.h */,
-				D6370B122521DA671820DB1F71233D0A /* SVGBezierPath.h */,
-				AEFEEA598446C13FE293401967DED175 /* SVGBezierPath.mm */,
-				A71D929C055DE15C541F2546076584DE /* SVGEngine.h */,
-				8B81EFFDEA27A57A03F50D394877DFD5 /* SVGEngine.mm */,
-				59E37501CF1B885C6FB8115972292A77 /* SVGImageView.h */,
-				91ECA55600661D5D4E316B6C1550E85A /* SVGImageView.m */,
-				B5704F361DBBB1BCF8BCDE4198A90219 /* SVGLayer.h */,
-				656CC2040A7A229A3EADD070859BE133 /* SVGLayer.m */,
-				1EC4F3D23F0196C2C906C8B9744720BB /* SVGPortability.h */,
-				082FE8F611580C2FC3DFEF058348579F /* Support Files */,
-			);
-			name = PocketSVG;
-			path = PocketSVG;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				29A2564912C51A239D8600ED5D47E1CB /* Pods */,
-				9F8255EF867251917C4C8B461F243EB5 /* Products */,
-				99A2BB726451F3778BACC31E6A788BB2 /* Targets Support Files */,
+				FA553F01010F5FB756A30C55A2BB72D8 /* Frameworks */,
+				9CC8E54876B8A7C44D649E01428DC5E0 /* Pods */,
+				3EE60900CDACAD0DD619D123635C6BF2 /* Products */,
+				88400316D301E55DA9346130C6A785F9 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		99A2BB726451F3778BACC31E6A788BB2 /* Targets Support Files */ = {
+		88400316D301E55DA9346130C6A785F9 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				20195C4B5B36CF69EA26F61A40216913 /* Pods-PocketSVG_Animation */,
+				7CE7DABDEA45B91A21C8E96392F01871 /* Pods-PocketSVG_Animation */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		9F8255EF867251917C4C8B461F243EB5 /* Products */ = {
+		98B13DFE055384FCAD3FEE506782F603 /* PocketSVG */ = {
 			isa = PBXGroup;
 			children = (
-				660FEDA5E8FD2AC442F57B37B33ED6F0 /* libPocketSVG.a */,
-				F2D0C223C483E57825B1DA884A4272F6 /* libPods-PocketSVG_Animation.a */,
+				9587D157FF14538A2C4E9E92905D76FA /* PocketSVG.h */,
+				DACAC56980DB58AAEF4BB92914BD2F21 /* SVGBezierPath.h */,
+				29D8F4CCB801FB40F93ED27B4D99DF7B /* SVGBezierPath.mm */,
+				4B44D775EE512E452E2AFCCF59910276 /* SVGEngine.h */,
+				AD5DB7B1D2F42F9F47E7B66977DC133F /* SVGEngine.mm */,
+				28BD16D4DE070F15C32753E0F731526C /* SVGImageView.h */,
+				B56372BB9B6F70F7FD24E058F99B50B3 /* SVGImageView.m */,
+				BD206C9E82685F390B17AA5447A48F76 /* SVGLayer.h */,
+				21AE6370E824D4C029EBE9537B9B41DA /* SVGLayer.m */,
+				B7386F51CC13E80AC424C715777FCF10 /* SVGPortability.h */,
+				71D70BA62ABDA78EAE79AE21A673FCF8 /* Support Files */,
 			);
-			name = Products;
+			name = PocketSVG;
+			path = PocketSVG;
 			sourceTree = "<group>";
 		};
-		C7AB6F27FF3606F9360547F8F1977A63 /* iOS */ = {
+		9CC8E54876B8A7C44D649E01428DC5E0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3AC5D9C5B838BE747D0154460D02F926 /* Foundation.framework */,
-				BACC64101FAE4862F8806DB02FC71B0E /* QuartzCore.framework */,
+				3BE27F9904A0103FA69103FDCD3BCAC5 /* Macaw */,
+				98B13DFE055384FCAD3FEE506782F603 /* PocketSVG */,
+				4CDAFC070F45664A6D6AC34EC3268DF8 /* SWXMLHash */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BDE3741160B8F12D0C0B0E9365224B20 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				873E735BEA15749F87EE2B992F1F98C6 /* Info.plist */,
+				59D11B0CF80371AADA5348215E4FF8FB /* SWXMLHash.modulemap */,
+				00F413D0F2A570A9477178738FE9A7C4 /* SWXMLHash.xcconfig */,
+				5718C6D83BBE4033C4F998C2136A3493 /* SWXMLHash-dummy.m */,
+				5DB0720082AEB078398366059657E493 /* SWXMLHash-prefix.pch */,
+				952A162462F7E935C28D5F0D41BD6A26 /* SWXMLHash-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SWXMLHash";
+			sourceTree = "<group>";
+		};
+		FA553F01010F5FB756A30C55A2BB72D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC5A3B239037E00D2E2BDAF8B37A389D /* SWXMLHash.framework */,
+				FDC5299EB691271280CB637C2C348252 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FDC5299EB691271280CB637C2C348252 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5E6C56B611037AD77EA86182EC4C8257 /* Foundation.framework */,
+				A2E616E5DCAF3AA59E9B0195E8311C8C /* QuartzCore.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
@@ -184,29 +630,109 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		569DE19283914D5A22FB5CE9E8E12FCE /* Headers */ = {
+		7D0234DDB6FCE9286F27A31B341ED7C4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				049416BB36FF546E42BEA628479C154C /* PocketSVG.h in Headers */,
-				967BB5B7EA4CCBD7C847DF2E7A902DF6 /* SVGBezierPath.h in Headers */,
-				F9541ADADA9A099BA37FB37699B2AD80 /* SVGEngine.h in Headers */,
-				8C7E86197CAF77A88AF9A55F9571E0C9 /* SVGImageView.h in Headers */,
-				C565CDF5838AB6605D357127D46FB587 /* SVGLayer.h in Headers */,
-				36EE7DE66E84BA71E8E8BA13C921F50F /* SVGPortability.h in Headers */,
+				C96A5EB69C1D4E0A6374C69F01158294 /* PocketSVG-umbrella.h in Headers */,
+				CD166EC4605082D35EFDC9F4D24397E4 /* PocketSVG.h in Headers */,
+				3F2A7AA3396E558540B1A1BE1F278338 /* SVGBezierPath.h in Headers */,
+				ABFF8191AE5E9435256402B4A8279A97 /* SVGEngine.h in Headers */,
+				FF15E06CB98A127706EA2D6C40C866D1 /* SVGImageView.h in Headers */,
+				8C5BFADAA3215A59B9DDB73AD1588B18 /* SVGLayer.h in Headers */,
+				FF229593701713A7EC5C4BA569BEA99C /* SVGPortability.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F6E47B6921D1929F88DD9ADACC977BC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2F32D5B16760F8FE8C3CB599A3C0BE6 /* Macaw-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBE994990A76E5469A12045CE8A02D3D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DAA691452B802B892992A81A0791022 /* Pods-PocketSVG_Animation-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB0F9A7F47DEFB22E5D811056F1318C4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02DC54ED6C2FE54AE52290B794A105D8 /* SWXMLHash-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		516C44CEAEEDBFD17014C7BB80AD8CE8 /* PocketSVG */ = {
+		06B9E556B75A271A556C6672B96A3F6D /* Pods-PocketSVG_Animation */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5B5FE191B95DE182D1E8A014E87ACB6A /* Build configuration list for PBXNativeTarget "PocketSVG" */;
+			buildConfigurationList = 198E22117D14B04B7B9E58B9F0AD9017 /* Build configuration list for PBXNativeTarget "Pods-PocketSVG_Animation" */;
 			buildPhases = (
-				87D1851020F6A88D1063C44CF6D4BB78 /* Sources */,
-				FE81C176B3FF8CBC02639461E5F755B1 /* Frameworks */,
-				569DE19283914D5A22FB5CE9E8E12FCE /* Headers */,
+				C1DBA9638BA479A923BB05BB7CC62B3B /* Sources */,
+				205807FE5C1C99DE2CCAED124C1B6884 /* Frameworks */,
+				CBE994990A76E5469A12045CE8A02D3D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4AE4E33A7A6F29D897099E46316352DB /* PBXTargetDependency */,
+				01D21FE6194AC13B6BF3233AF5CB4168 /* PBXTargetDependency */,
+				62F66A55EA87830CF30B4510C6B41223 /* PBXTargetDependency */,
+			);
+			name = "Pods-PocketSVG_Animation";
+			productName = "Pods-PocketSVG_Animation";
+			productReference = 7C540217C20D11E493B97E732497EF29 /* Pods_PocketSVG_Animation.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0FFE669DCA4D2CE297C098F710E30911 /* Macaw */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 752C14D6F29B3354FEE92A12B73437E4 /* Build configuration list for PBXNativeTarget "Macaw" */;
+			buildPhases = (
+				138B0B7CF93BA0ABC8F0E19F0E290710 /* Sources */,
+				37C548052CEDD851591354643E9EF762 /* Frameworks */,
+				7F6E47B6921D1929F88DD9ADACC977BC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8712316808DA9B8AA7A20130DCCA8729 /* PBXTargetDependency */,
+			);
+			name = Macaw;
+			productName = Macaw;
+			productReference = 1D8847F4B1CDF33EC1606BC263CC17CC /* Macaw.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CF3A32E5430952DD724352123454B893 /* SWXMLHash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 997668893D7991ECDA7DEF6CD2170348 /* Build configuration list for PBXNativeTarget "SWXMLHash" */;
+			buildPhases = (
+				1CA7DD110F4D5B09A7059C1D261B5D7E /* Sources */,
+				12EF69E24FA9912293F588204A8852FC /* Frameworks */,
+				DB0F9A7F47DEFB22E5D811056F1318C4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SWXMLHash;
+			productName = SWXMLHash;
+			productReference = A5D138BC8BE68AEE4C9EDE3E5F44BF87 /* SWXMLHash.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D98986199D4F04C546E0E25C7DC731EF /* PocketSVG */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C215DF47C199DAFE3B9A9E441A42B0AC /* Build configuration list for PBXNativeTarget "PocketSVG" */;
+			buildPhases = (
+				33EA2AF67EEB1365664A3C23DC70092C /* Sources */,
+				A738DD2D74FC9564F9DD542B4DEAA1CA /* Frameworks */,
+				7D0234DDB6FCE9286F27A31B341ED7C4 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -214,25 +740,8 @@
 			);
 			name = PocketSVG;
 			productName = PocketSVG;
-			productReference = 660FEDA5E8FD2AC442F57B37B33ED6F0 /* libPocketSVG.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		B648C6A15871C0ECF5429419A9D762B7 /* Pods-PocketSVG_Animation */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 716B60BFBFA34DBC0753018F5BB3EA96 /* Build configuration list for PBXNativeTarget "Pods-PocketSVG_Animation" */;
-			buildPhases = (
-				1C49F338BABF7B9AAF9F8626619DB3F2 /* Sources */,
-				5B057684FDCF11A2B060BE122537AC75 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2D0D4081ABDA67F19B44071E5005619D /* PBXTargetDependency */,
-			);
-			name = "Pods-PocketSVG_Animation";
-			productName = "Pods-PocketSVG_Animation";
-			productReference = F2D0C223C483E57825B1DA884A4272F6 /* libPods-PocketSVG_Animation.a */;
-			productType = "com.apple.product-type.library.static";
+			productReference = 02B315450080C3695814C880FB0B72F2 /* PocketSVG.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -251,49 +760,225 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 9F8255EF867251917C4C8B461F243EB5 /* Products */;
+			productRefGroup = 3EE60900CDACAD0DD619D123635C6BF2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				516C44CEAEEDBFD17014C7BB80AD8CE8 /* PocketSVG */,
-				B648C6A15871C0ECF5429419A9D762B7 /* Pods-PocketSVG_Animation */,
+				0FFE669DCA4D2CE297C098F710E30911 /* Macaw */,
+				D98986199D4F04C546E0E25C7DC731EF /* PocketSVG */,
+				06B9E556B75A271A556C6672B96A3F6D /* Pods-PocketSVG_Animation */,
+				CF3A32E5430952DD724352123454B893 /* SWXMLHash */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1C49F338BABF7B9AAF9F8626619DB3F2 /* Sources */ = {
+		138B0B7CF93BA0ABC8F0E19F0E290710 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C7A5FD9F03ED16FAD14E1C024E9489C /* Pods-PocketSVG_Animation-dummy.m in Sources */,
+				FAF5645FFE0E9E67665D64BBA57E18D5 /* Align.swift in Sources */,
+				A47CF80FC2DD213C67BAEA2D0E50375D /* AnimatableVariable.swift in Sources */,
+				A72F76644A923EF117D8A1C135FDD2EB /* Animation.swift in Sources */,
+				435BB2EF68CCA751CC5FA4DE95EE443A /* AnimationCache.swift in Sources */,
+				7868FBE29090DA3EE10CF5B24C574B8B /* AnimationImpl.swift in Sources */,
+				01CC04B099F5951166E8D1B5274CFC80 /* AnimationProducer.swift in Sources */,
+				FDCF0D06D80C94A93B5E12FBEDF02E2F /* AnimationRestorer.swift in Sources */,
+				A7BB40705E1BA0805099B2AEC8272571 /* AnimationSequence.swift in Sources */,
+				E3DFC765B53E33C9745BFF8A9314465A /* AnimationUtils.swift in Sources */,
+				22BAD50B76FA6895E9DDA9442833F11B /* AnimOperators.swift in Sources */,
+				481FECCC0E8F200D5EF85640758BF85E /* Arc.swift in Sources */,
+				95429D2589D3C41C871A96202FC6A588 /* AspectRatio.swift in Sources */,
+				5BDED56EFB35368C472D14FAEF1AD932 /* Baseline.swift in Sources */,
+				45DEBB00F1744F89B5236C5AD63D3030 /* CAAnimationClosure.swift in Sources */,
+				400EE8FF74CBCAF27939005629B385E8 /* CGExtensions.swift in Sources */,
+				88067ED4651972168723C10779273986 /* CGFloat+Double.swift in Sources */,
+				9B95EB3A35E97D38020A7878CB15AC54 /* Circle.swift in Sources */,
+				327F3DAE539DA86A984139F8CAA92506 /* Color.swift in Sources */,
+				AA8E36805588F1F50EE8528C7C976C82 /* CombineAnimation.swift in Sources */,
+				7B28424C0A71C11FBC4E56825FBB6BBF /* ContentsAnimation.swift in Sources */,
+				1A92C217192B77DF8DA30D2C978418DA /* ContentsInterpolation.swift in Sources */,
+				27C7F20CBCD2008B6B4FE2E142AEF45B /* Disposable.swift in Sources */,
+				8FED5F5FCAC07DAA86A8FCB4380A262A /* DoubleInterpolation.swift in Sources */,
+				8FE033B8CF8D6E47AD55DD6E993F9DC9 /* Drawable.swift in Sources */,
+				3088599385D4272703EE7BEFBB7D92CC /* DropShadow.swift in Sources */,
+				F62E5C90871495575684C5092C6A3B07 /* Easing.swift in Sources */,
+				4DF6F15882D3B9A347D86F5E3BB7CFF4 /* Effect.swift in Sources */,
+				70DF4E33806259F713DAB130CC1C690C /* Ellipse.swift in Sources */,
+				9F43A01B6B7E297D167526AD9278452B /* Event.swift in Sources */,
+				921AB43F4FE671C7756066570ED98BE6 /* Fill.swift in Sources */,
+				F95DA29A5C390C567DDA8EF97F3DC542 /* FillInterpolation.swift in Sources */,
+				8840590C69477EA1F721045F899AB058 /* Font.swift in Sources */,
+				B9389D55F43DE90F8B07CF341D141FD4 /* FuncBounds.swift in Sources */,
+				E199FB5E3552F03A0CEC450059557887 /* GaussianBlur.swift in Sources */,
+				24787A6FD8A02D40EC175E88232722EC /* GeomUtils.swift in Sources */,
+				F33F0AB91DCDE422AF6FDF02C1D0C48F /* Gradient.swift in Sources */,
+				14AA8FF9126C627E80CCF17C72CB9E96 /* Group.swift in Sources */,
+				203AE8B2C1ABC0D97CF993AE30CEC2D2 /* GroupDisposable.swift in Sources */,
+				82CBDF33C56168C390988558351A02CC /* GroupRenderer.swift in Sources */,
+				1621D205CDBEB784754B6B09CFFAFF42 /* Image.swift in Sources */,
+				1CF8508C4CFCE97E5ED07928A03F61CD /* ImageRenderer.swift in Sources */,
+				D83884CAE68F5CE317D3CAFD3F815313 /* Info.plist in Sources */,
+				A31E2B428BDF0C945797241E2BDBB60A /* Insets.swift in Sources */,
+				557B301753A36477D45CD99927FDE50F /* Interpolable.swift in Sources */,
+				0192592B67601D34CB56CB80DB2CDE95 /* Line.swift in Sources */,
+				0BF588CD5F424E8B72DFCECD8D476369 /* LinearGradient.swift in Sources */,
+				A4365DA8D4681298F435375133ECE8BA /* LineCap.swift in Sources */,
+				FD10605DAC7EFEC91298B264CCAA52F7 /* LineJoin.swift in Sources */,
+				CDFFDEE3E8A585C6324197B809A0648D /* Locus.swift in Sources */,
+				E4DB32B474C328B2BBC42A8C8833746B /* LocusInterpolation.swift in Sources */,
+				DE28542AC74324EAA7C6817D1C261404 /* Macaw-dummy.m in Sources */,
+				342268F99D3D8124C437AB6D9E01DD40 /* MacawView.swift in Sources */,
+				439FEFA2167D1DFF088E946F7080FFE2 /* MorphingAnimation.swift in Sources */,
+				F2D89D9FE55887C21A036A96BB56E597 /* MorphingGenerator.swift in Sources */,
+				FE9D2EE02CB3C52EE55FB485662155CD /* MoveTo.swift in Sources */,
+				EA6F620EC34BD15FE297A02772191926 /* Node.swift in Sources */,
+				6CD48D741773BBA399E51B889B3A5A49 /* NodeHashable.swift in Sources */,
+				3D9CEC1305481CAF7EE157088694F7D5 /* NodeRenderer.swift in Sources */,
+				D44E889697BCB06EA1056807810E89A9 /* NodesMap.swift in Sources */,
+				C3F81903801C4296BD981CDCD980ED6B /* NSTimer+Closure.swift in Sources */,
+				A4979201C27BCB069EFBF044162982E9 /* OpacityAnimation.swift in Sources */,
+				F8865ACA36DDA3104E511931FD78968F /* OpacityGenerator.swift in Sources */,
+				D1242A0D976413651A58144C4CCE4068 /* PanEvent.swift in Sources */,
+				4DD923E0D84A97A3B4AA9697171087B5 /* Path.swift in Sources */,
+				179BEAA988CE8E581C714091AC701FD1 /* PathBounds.swift in Sources */,
+				75D7E51BE163CFA9D61464CE03D8498B /* PathBuilder.swift in Sources */,
+				7D242A481335AB9D3FF0D648FD0B6D98 /* PathFunctions.swift in Sources */,
+				F9B1ADAE0A57D534DDD2953639A2FDA7 /* PathSegment.swift in Sources */,
+				95089EC67F1DC2E66CEBE8EBD8AF8518 /* PathSegmentType.swift in Sources */,
+				828680E20F267D711CBC98B81B63EA28 /* PinchEvent.swift in Sources */,
+				41D380986133CC588DAEE652C383F846 /* Point.swift in Sources */,
+				EF92D4A52AA63232BA5D8D6156FE9563 /* Polygon.swift in Sources */,
+				67FC4506FC6AC74F461916D0E38005AE /* Polyline.swift in Sources */,
+				0202E449892B161D105CABCAA749CC59 /* RadialGradient.swift in Sources */,
+				520B8226A96B14B9712EF1142A1CD744 /* Rect.swift in Sources */,
+				06C8E9131B5F7E901BEA5CB393658C6C /* RenderContext.swift in Sources */,
+				3154A5EB5F9CFFA5BE4FE6B1CE8B5B37 /* RenderUtils.swift in Sources */,
+				6CCCF74CFCE9A993BEF511347C6565B5 /* RotateEvent.swift in Sources */,
+				0D3F0A7F09294A06AC1F7EF36FAB5D3B /* RoundRect.swift in Sources */,
+				1BC0E37AC8D2657ECE8A54C2555AD5A0 /* SceneUtils.swift in Sources */,
+				BDF559D88E3A29E080CBC260C2E88B77 /* Shape.swift in Sources */,
+				33727DA222A7721FCAAF374EA4418282 /* ShapeAnimation.swift in Sources */,
+				AADE0CD3561749A910F012A309562634 /* ShapeAnimationGenerator.swift in Sources */,
+				1EBF01E8C0EC42194BE2102B922C694C /* ShapeInterpolation.swift in Sources */,
+				C9548B302E91F9B55F7DB5DD141021E6 /* ShapeLayer.swift in Sources */,
+				15DEEC27A9A77D4E9150418C8BAD9955 /* ShapeRenderer.swift in Sources */,
+				24B0AD2EBC874D421EADF21E263AF3D0 /* Size.swift in Sources */,
+				74A2682AEF8F7571E089BEF8BD9CE91C /* Stop.swift in Sources */,
+				D37AF40E41FAB29343746CEE28ED754F /* Stroke.swift in Sources */,
+				EDFE12E4CEE8142ED6C52C75C0BCD9FB /* StrokeInterpolation.swift in Sources */,
+				0BDE72BF4FDD4AA3C9E38523AB5D92B5 /* SVGConstants.swift in Sources */,
+				A4D8E6E767EF7A27E3A37BC01FF5D0E1 /* SVGParser.swift in Sources */,
+				28634A52342430CE70A527409E7CC8B2 /* SVGParserError.swift in Sources */,
+				D104A9A5C80DF073EC9A546AFD2F7FCA /* SVGParserRegexHelper.swift in Sources */,
+				E1CD7286CE0BBF393501F917DB50EC7C /* SVGView.swift in Sources */,
+				062E1BC78A846E5F39DAD438595DBB62 /* TapEvent.swift in Sources */,
+				126288E695E20DEFDD8E269773E6B7E0 /* Text.swift in Sources */,
+				5C7F4CE9D8DB5CD2676F74DBB4EEB98E /* TextRenderer.swift in Sources */,
+				41B1C441293C87395E6EE3F6B710C87D /* TimingFunction.swift in Sources */,
+				2CF85BE7E652BDE5BDC44A03870B110B /* TouchEvent.swift in Sources */,
+				AF68911D105DA292DB84CBF35B920694 /* Transform.swift in Sources */,
+				40F9CDE9FF228382407811ED77BD043E /* TransformAnimation.swift in Sources */,
+				9C471F734D2A8BE73A5BCA31E509A395 /* TransformGenerator.swift in Sources */,
+				D220BB6431573F40C0CD62ADBCA84F97 /* TransformHashable.swift in Sources */,
+				127D32B69AF79CA791E73004C9F82249 /* TransformInterpolation.swift in Sources */,
+				BCB56A6B982C933AB23C1818F9BD9B11 /* Variable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		87D1851020F6A88D1063C44CF6D4BB78 /* Sources */ = {
+		1CA7DD110F4D5B09A7059C1D261B5D7E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5EC82AA8BA3D30EA4BAEBCEFDA244961 /* PocketSVG-dummy.m in Sources */,
-				11B1952C1FCC512717C6FECCC58FE8DD /* SVGBezierPath.mm in Sources */,
-				2C8BA0F87E68E3C82C898DCD08920D2E /* SVGEngine.mm in Sources */,
-				053AFCA717944C5D3AF6E7618F94C9ED /* SVGImageView.m in Sources */,
-				C2EC168BBAB0DD070A191E5A8C3CBA4D /* SVGLayer.m in Sources */,
+				5F8EFF6E71B335F0F3A4A197B00ECE4A /* SWXMLHash+TypeConversion.swift in Sources */,
+				C0B243B2BDA0592ECD325D3DDEE2AA45 /* SWXMLHash-dummy.m in Sources */,
+				8EC1D6A5512948AFD68AB95358835F2F /* SWXMLHash.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33EA2AF67EEB1365664A3C23DC70092C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC91F9A7200B6E29320631EF2F3C6187 /* PocketSVG-dummy.m in Sources */,
+				45F9FC57D7C3EADD352F3EC27856F862 /* SVGBezierPath.mm in Sources */,
+				E9693C801F7832C549964D70FFADB69D /* SVGEngine.mm in Sources */,
+				9BABFD6009CA8B093050102DE8F6B272 /* SVGImageView.m in Sources */,
+				98D952314188E6C51DC8E7E29B777EF8 /* SVGLayer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1DBA9638BA479A923BB05BB7CC62B3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BE1B0DE90BA52BBD1A3094C8FECBB67 /* Pods-PocketSVG_Animation-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2D0D4081ABDA67F19B44071E5005619D /* PBXTargetDependency */ = {
+		01D21FE6194AC13B6BF3233AF5CB4168 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = PocketSVG;
-			target = 516C44CEAEEDBFD17014C7BB80AD8CE8 /* PocketSVG */;
-			targetProxy = 5D4CF4C7B75D79A02366F4A36F75B085 /* PBXContainerItemProxy */;
+			target = D98986199D4F04C546E0E25C7DC731EF /* PocketSVG */;
+			targetProxy = 4418268ED1220396C8D540166FB6BA48 /* PBXContainerItemProxy */;
+		};
+		4AE4E33A7A6F29D897099E46316352DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Macaw;
+			target = 0FFE669DCA4D2CE297C098F710E30911 /* Macaw */;
+			targetProxy = A5289B3C63C5101BD1E57A8B621DAA6F /* PBXContainerItemProxy */;
+		};
+		62F66A55EA87830CF30B4510C6B41223 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SWXMLHash;
+			target = CF3A32E5430952DD724352123454B893 /* SWXMLHash */;
+			targetProxy = 1926BF765FEE402A644844EAA520FB7D /* PBXContainerItemProxy */;
+		};
+		8712316808DA9B8AA7A20130DCCA8729 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SWXMLHash;
+			target = CF3A32E5430952DD724352123454B893 /* SWXMLHash */;
+			targetProxy = D52AE50998A97D3371646A64671DDBDD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		0FF8AB7F5F6B81A68C80C8F6E04F7B6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00F413D0F2A570A9477178738FE9A7C4 /* SWXMLHash.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SWXMLHash/SWXMLHash-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SWXMLHash/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SWXMLHash/SWXMLHash.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SWXMLHash;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		12914D756594D15C6F2CA12FE5F89F1B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -338,99 +1023,201 @@
 			};
 			name = Debug;
 		};
-		36A0F99CD82FCD66DC17885EBB5F207F /* Debug */ = {
+		18EFBE653651F279B8C59B5A4207F866 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 62E00B1D15DE07A7A5BE454448C95616 /* Pods-PocketSVG_Animation.debug.xcconfig */;
+			baseConfigurationReference = 00F413D0F2A570A9477178738FE9A7C4 /* SWXMLHash.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Target Support Files/SWXMLHash/SWXMLHash-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SWXMLHash/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SWXMLHash/SWXMLHash.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SWXMLHash;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		5754891A329395681D4937B144A8421A /* Release */ = {
+		28CED4B76B1E26435F746B291D6DB342 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7066148490EEE21F90C21133A08AAD4E /* Pods-PocketSVG_Animation.release.xcconfig */;
+			baseConfigurationReference = 13C95C2070E3DFFD59501C4DF47D60F5 /* Pods-PocketSVG_Animation.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PocketSVG_Animation/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PocketSVG_Animation/Pods-PocketSVG_Animation.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Pods_PocketSVG_Animation;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		7BE0B583392228D0E27F82909BC97BEA /* Release */ = {
+		45843C6578244C27974CBBB3FB4A89E3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2B02917EE483F2D2F35219D1C9230587 /* PocketSVG.xcconfig */;
+			baseConfigurationReference = DEA2E1A47A5DCC47AFAE598EA45B16BC /* Macaw.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/PocketSVG/PocketSVG-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				GCC_PREFIX_HEADER = "Target Support Files/Macaw/Macaw-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Macaw/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Macaw/Macaw.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = Macaw;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		7DCB074B744CB4D60A1FAA90C8725E5F /* Debug */ = {
+		A319F9E2CC35880DF9CCF35238AE1F48 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2B02917EE483F2D2F35219D1C9230587 /* PocketSVG.xcconfig */;
+			baseConfigurationReference = DEA2E1A47A5DCC47AFAE598EA45B16BC /* Macaw.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/PocketSVG/PocketSVG-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				GCC_PREFIX_HEADER = "Target Support Files/Macaw/Macaw-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Macaw/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Macaw/Macaw.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = Macaw;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		AB32BC0B9DF3BFBB0F3B4E58182434D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A1B0FEB97491E4BE84800E133D5DE28 /* PocketSVG.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PocketSVG/PocketSVG-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PocketSVG/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PocketSVG/PocketSVG.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = PocketSVG;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D440406B2743A74C481B8DBDA897D025 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A1B0FEB97491E4BE84800E133D5DE28 /* PocketSVG.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PocketSVG/PocketSVG-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PocketSVG/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PocketSVG/PocketSVG.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = PocketSVG;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		E72E7977875C2D251FC62736BBDDC389 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -472,9 +1259,54 @@
 			};
 			name = Release;
 		};
+		F3704FE5516EECA61214E2390971186C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11C574360CB4A3556F429B7D2A7A0716 /* Pods-PocketSVG_Animation.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PocketSVG_Animation/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PocketSVG_Animation/Pods-PocketSVG_Animation.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PocketSVG_Animation;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		198E22117D14B04B7B9E58B9F0AD9017 /* Build configuration list for PBXNativeTarget "Pods-PocketSVG_Animation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3704FE5516EECA61214E2390971186C /* Debug */,
+				28CED4B76B1E26435F746B291D6DB342 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -484,20 +1316,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5B5FE191B95DE182D1E8A014E87ACB6A /* Build configuration list for PBXNativeTarget "PocketSVG" */ = {
+		752C14D6F29B3354FEE92A12B73437E4 /* Build configuration list for PBXNativeTarget "Macaw" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7DCB074B744CB4D60A1FAA90C8725E5F /* Debug */,
-				7BE0B583392228D0E27F82909BC97BEA /* Release */,
+				A319F9E2CC35880DF9CCF35238AE1F48 /* Debug */,
+				45843C6578244C27974CBBB3FB4A89E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		716B60BFBFA34DBC0753018F5BB3EA96 /* Build configuration list for PBXNativeTarget "Pods-PocketSVG_Animation" */ = {
+		997668893D7991ECDA7DEF6CD2170348 /* Build configuration list for PBXNativeTarget "SWXMLHash" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				36A0F99CD82FCD66DC17885EBB5F207F /* Debug */,
-				5754891A329395681D4937B144A8421A /* Release */,
+				0FF8AB7F5F6B81A68C80C8F6E04F7B6B /* Debug */,
+				18EFBE653651F279B8C59B5A4207F866 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C215DF47C199DAFE3B9A9E441A42B0AC /* Build configuration list for PBXNativeTarget "PocketSVG" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB32BC0B9DF3BFBB0F3B4E58182434D8 /* Debug */,
+				D440406B2743A74C481B8DBDA897D025 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
