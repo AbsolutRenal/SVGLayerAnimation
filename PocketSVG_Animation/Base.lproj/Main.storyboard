@@ -30,7 +30,7 @@
                                 <rect key="frame" x="0.0" y="167" width="375" height="166.5"/>
                                 <color key="backgroundColor" red="0.23950053020000001" green="0.29605669709999999" blue="0.35995003170000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="fileName" value="USI-10ans"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fileName" value="homer-simpson"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qy9-VA-nbh">
@@ -63,9 +63,9 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="SVGKitView" destination="Rmo-lp-Kaf" id="kGO-Td-c4N"/>
                         <outlet property="macawView" destination="q0g-cY-f01" id="jCL-4N-DIC"/>
                         <outlet property="pocketSVGView" destination="RLr-0t-n5u" id="VzT-ID-Aoo"/>
+                        <outlet property="svgKitView" destination="Rmo-lp-Kaf" id="pKI-hN-R42"/>
                         <outlet property="swiftSVGView" destination="Qy9-VA-nbh" id="fyt-X5-dHq"/>
                     </connections>
                 </viewController>

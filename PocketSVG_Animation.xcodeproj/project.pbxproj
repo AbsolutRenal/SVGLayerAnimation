@@ -14,6 +14,7 @@
 		E282DED61E9B784B009BE85C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E282DED51E9B784B009BE85C /* Assets.xcassets */; };
 		E282DED91E9B784B009BE85C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E282DED71E9B784B009BE85C /* LaunchScreen.storyboard */; };
 		E282DEE41E9B784B009BE85C /* PocketSVG_AnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E282DEE31E9B784B009BE85C /* PocketSVG_AnimationTests.swift */; };
+		E2A4683F1E9CDFD800FE3AD3 /* homer-simpson.svg in Resources */ = {isa = PBXBuildFile; fileRef = E2A4683E1E9CDFD800FE3AD3 /* homer-simpson.svg */; };
 		E2A726FF1E9B7D0800DE28EF /* USI-10ans.svg in Resources */ = {isa = PBXBuildFile; fileRef = E2A726FE1E9B7D0800DE28EF /* USI-10ans.svg */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		E282DEDF1E9B784B009BE85C /* PocketSVG_AnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PocketSVG_AnimationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E282DEE31E9B784B009BE85C /* PocketSVG_AnimationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketSVG_AnimationTests.swift; sourceTree = "<group>"; };
 		E282DEE51E9B784B009BE85C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2A4683E1E9CDFD800FE3AD3 /* homer-simpson.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "homer-simpson.svg"; sourceTree = "<group>"; };
 		E2A726FE1E9B7D0800DE28EF /* USI-10ans.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "USI-10ans.svg"; sourceTree = "<group>"; };
 		E2A727001E9B7EEF00DE28EF /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -128,6 +130,7 @@
 		E2A726FD1E9B7CD400DE28EF /* Ressources */ = {
 			isa = PBXGroup;
 			children = (
+				E2A4683E1E9CDFD800FE3AD3 /* homer-simpson.svg */,
 				E2A726FE1E9B7D0800DE28EF /* USI-10ans.svg */,
 			);
 			path = Ressources;
@@ -222,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2A726FF1E9B7D0800DE28EF /* USI-10ans.svg in Resources */,
+				E2A4683F1E9CDFD800FE3AD3 /* homer-simpson.svg in Resources */,
 				E282DED91E9B784B009BE85C /* LaunchScreen.storyboard in Resources */,
 				E282DED61E9B784B009BE85C /* Assets.xcassets in Resources */,
 				E282DED41E9B784B009BE85C /* Main.storyboard in Resources */,

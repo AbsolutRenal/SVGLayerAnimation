@@ -27,7 +27,10 @@ class ViewController: UIViewController {
   @IBOutlet weak var pocketSVGView: UIView!
   @IBOutlet weak var macawView: Macaw.SVGView!
   @IBOutlet weak var swiftSVGView: UIView!
-  @IBOutlet weak var SVGKitView: UIView!
+  @IBOutlet weak var svgKitView: UIView!
+  
+  private let svgFileName = "USI-10ans"
+//  private let svgFileName = "homer-simpson"
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -38,10 +41,12 @@ class ViewController: UIViewController {
     super.viewDidAppear(animated)
     
     drawPocketSVG()
+    drawSwiftSVG()
+    drawSVGKit()
   }
   
   private func drawPocketSVG() {
-    let url = Bundle.main.url(forResource: "USI-10ans", withExtension: "svg")!
+    let url = Bundle.main.url(forResource: svgFileName, withExtension: "svg")!
     drawFullSVG(atURL: url)
 //    drawSVGPath(atURL: url)
   }
@@ -72,6 +77,27 @@ class ViewController: UIViewController {
     }
     pocketSVGView.layer.masksToBounds = false
     pocketSVGView.layer.backgroundColor = UIColor.usiGray.cgColor
+  }
+  
+  private func drawSwiftSVG() {
+    let shapeLayer = CAShapeLayer()
+    let svgURL = Bundle.main.url(forResource: svgFileName, withExtension: "svg")
+    let pathFromSVGFile = UIBezierPath.pathWithSVGURL(svgURL!)
+    shapeLayer.path = pathFromSVGFile?.cgPath
+    swiftSVGView.layer.addSublayer(shapeLayer)
+  }
+  
+  private func drawSVGKit() {
+    let image = SVGKImage(named: svgFileName)
+    guard let imageKit = image else {
+      return
+    }
+    let svgView = SVGKFastImageView(svgkImage: imageKit)
+    guard let svgViewKit = svgView else {
+      return
+    }
+    svgViewKit.frame = svgKitView.bounds
+    svgKitView.addSubview(svgViewKit)
   }
 
   override func didReceiveMemoryWarning() {
