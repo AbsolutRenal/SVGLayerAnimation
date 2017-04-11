@@ -24,8 +24,10 @@ class ViewController: UIViewController, Animatable {
   @IBOutlet weak var svgKitView: UIView!
   
   private let svgFileName = "USI-10ans"
-  private let animDelay: CFTimeInterval = 0.15
+  private let animDelay: Float = 0.15
   private let animDuration: CFTimeInterval = 4.0
+  private let randomDelaySeed: UInt32 = 30
+  private let randomDelayDivider: Float = 60.0
   private let easing = CAMediaTimingFunction(controlPoints: 0.5,
                                              1.0,
                                              0.8,
@@ -56,7 +58,12 @@ class ViewController: UIViewController, Animatable {
     animateLayerTree(layer: svgViewKit.image.caLayerTree)
   }
   
-  private func animateLayerTree(layer: CALayer, delay: CFTimeInterval = 0.0) {
+  private func randomDelay() -> Float {
+    let random = arc4random_uniform(randomDelaySeed)
+    return Float(random) / randomDelayDivider
+  }
+  
+  private func animateLayerTree(layer: CALayer, delay: Float = 0.0) {
     if let sublayers = layer.sublayers {
       sublayers.forEach { [unowned self] in
         self.animateLayerTree(layer: $0, delay: delay + self.animDelay)
@@ -64,7 +71,7 @@ class ViewController: UIViewController, Animatable {
     } else {
       let anim = buildKeyFrameAnimation(keyPath: "strokeEnd",
                                         values: [0.0, 1.0],
-                                        keyTimes: [0.0, 1.0],
+                                        keyTimes: [NSNumber(value: delay + randomDelay()), 1.0],
                                         duration: animDuration,
                                         delegate: nil,
                                         timingFunctions: [easing])
